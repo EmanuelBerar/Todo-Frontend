@@ -1,0 +1,1 @@
+/home/berar/projects/todo-frontend/tmp/funnel-input_base_path-pb9cKv6e.tmp/services/resize-detector.js

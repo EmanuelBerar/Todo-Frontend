@@ -1,0 +1,1 @@
+/home/berar/projects/todo-frontend/node_modules/ember-modal-dialog/app/components/modal-dialog.js

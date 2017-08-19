@@ -1,0 +1,1 @@
+/home/berar/projects/todo-frontend/tmp/funnel-input_base_path-0RzjUreC.tmp/-property-modifiers-mixin.js

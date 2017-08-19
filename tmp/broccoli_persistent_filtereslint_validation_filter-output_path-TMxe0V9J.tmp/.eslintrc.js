@@ -1,0 +1,1 @@
+/home/berar/projects/todo-frontend/tmp/broccoli_persistent_filtereslint_validation_filter-input_base_path-kmo4aFl4.tmp/.eslintrc.js

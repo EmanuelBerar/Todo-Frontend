@@ -1,0 +1,1 @@
+/home/berar/projects/todo-frontend/tmp/funnel-input_base_path-TPqI10ue.tmp/utils/regexp.js

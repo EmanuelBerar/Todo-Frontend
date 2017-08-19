@@ -1,0 +1,1 @@
+export default Ember.HTMLBars.template({"id":"3MZkGYx1","block":"{\"statements\":[[18,\"default\"],[0,\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[\"default\"],\"hasPartials\":false}","meta":{"moduleName":"todo-front/templates/components/transition-group.hbs"}});

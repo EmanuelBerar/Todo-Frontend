@@ -1,0 +1,1 @@
+/home/berar/projects/todo-frontend/tmp/funnel-input_base_path-5B9ybyi4.tmp/components/basic-dropdown/trigger.js

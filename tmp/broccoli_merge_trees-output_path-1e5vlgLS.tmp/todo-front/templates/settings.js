@@ -1,0 +1,1 @@
+/home/berar/projects/todo-frontend/tmp/broccoli_merge_trees-input_base_path-DthRc5Vl.tmp/1/todo-front/templates/settings.js

@@ -1,0 +1,1 @@
+/home/berar/projects/todo-frontend/tmp/funnel-input_base_path-Bp36N3XF.tmp/components/ember-wormhole.js

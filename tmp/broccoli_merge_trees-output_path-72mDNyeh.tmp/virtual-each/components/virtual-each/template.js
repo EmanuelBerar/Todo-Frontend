@@ -1,0 +1,1 @@
+/home/berar/projects/todo-frontend/tmp/broccoli_merge_trees-input_base_path-KdmyCAhB.tmp/1/virtual-each/components/virtual-each/template.js

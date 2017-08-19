@@ -1,0 +1,1 @@
+/home/berar/projects/todo-frontend/tmp/broccoli_merge_trees-input_base_path-y7eOqUGl.tmp/1/helpers/ember-power-select.js

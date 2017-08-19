@@ -1,0 +1,1 @@
+/home/berar/projects/todo-frontend/tmp/config_replace-output_path-MGuoKWeS.tmp/vendor-prefix.js

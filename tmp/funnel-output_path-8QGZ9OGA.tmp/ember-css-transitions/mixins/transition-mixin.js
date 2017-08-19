@@ -1,0 +1,1 @@
+/home/berar/projects/todo-frontend/tmp/funnel-input_base_path-rEG4KR7S.tmp/mixins/transition-mixin.js

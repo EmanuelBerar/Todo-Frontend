@@ -1,0 +1,1 @@
+/home/berar/projects/todo-frontend/tmp/funnel-input_base_path-j9Z0xdF8.tmp/mixins/run.js

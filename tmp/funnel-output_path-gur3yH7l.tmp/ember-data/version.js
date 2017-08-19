@@ -1,0 +1,1 @@
+/home/berar/projects/todo-frontend/tmp/creator-output_path-O8B0goVO.tmp/version.js

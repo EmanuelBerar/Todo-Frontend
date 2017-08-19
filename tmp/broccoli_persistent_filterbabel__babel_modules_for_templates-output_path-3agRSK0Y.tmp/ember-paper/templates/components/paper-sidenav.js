@@ -1,0 +1,6 @@
+define("ember-paper/templates/components/paper-sidenav", ["exports"], function (exports) {
+  "use strict";
+
+  exports.__esModule = true;
+  exports.default = Ember.HTMLBars.template({ "id": "QWUWZvoy", "block": "{\"statements\":[[6,[\"unless\"],[[28,[\"closed\"]]],null,{\"statements\":[[0,\"  \"],[1,[33,[\"paper-backdrop\"],null,[[\"opaque\",\"class\",\"onClick\"],[true,\"md-sidenav-backdrop\",[33,[\"action\"],[[28,[null]],\"onBackdropTap\"],null]]]],false],[0,\"\\n\"]],\"locals\":[]},null],[0,\"\\n\"],[6,[\"paper-sidenav-inner\"],null,[[\"class\",\"name\",\"position\",\"lockedOpen\",\"closed\",\"closeOnClick\",\"onToggle\"],[[28,[\"class\"]],[28,[\"name\"]],[28,[\"position\"]],[28,[\"lockedOpen\"]],[28,[\"closed\"]],[28,[\"closeOnClick\"]],[33,[\"action\"],[[28,[null]],\"onToggle\"],null]]],{\"statements\":[[0,\"  \"],[18,\"default\"],[0,\"\\n\"]],\"locals\":[]},null]],\"locals\":[],\"named\":[],\"yields\":[\"default\"],\"hasPartials\":false}", "meta": { "moduleName": "ember-paper/templates/components/paper-sidenav.hbs" } });
+});

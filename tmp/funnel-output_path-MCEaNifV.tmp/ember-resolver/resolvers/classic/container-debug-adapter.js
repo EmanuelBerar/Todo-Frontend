@@ -1,0 +1,1 @@
+/home/berar/projects/todo-frontend/tmp/funnel-input_base_path-wAKbkY6q.tmp/resolvers/classic/container-debug-adapter.js

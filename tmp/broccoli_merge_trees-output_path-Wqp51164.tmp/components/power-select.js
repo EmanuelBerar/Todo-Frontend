@@ -1,0 +1,1 @@
+/home/berar/projects/todo-frontend/node_modules/ember-power-select/app/components/power-select.js
