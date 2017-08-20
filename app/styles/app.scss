@@ -6,18 +6,15 @@
 
 
 .header{
-  margin-top: 200px;
+  padding-top: 50px;
 }
 
-.todo-progress-done {
-  padding-left: 60px;
-}
 .container-card {
-  position: absolute;
   flex: 1; /* additionally, equal width */
-  top: 7.5%;
-  left: 19.5%;
-   background-color: rgb(176, 190, 197);
+  // background-color: rgb(176, 190, 197);
+  // border-radius: 15px;
+  margin-left: 15%;
+  margin-right: 10%;
 
 
 
@@ -25,6 +22,11 @@
   background-color: rgb(236, 239, 241);
 }
 
+}
+
+.card-block {
+  // position: fixed!important;
+  border-radius: 15px;
 
 }
 
@@ -32,34 +34,65 @@
     /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
+
 }
 
 .settings-button {
-  margin-left: 93%;
   background-color: #f44336;
 }
+
 .add-button {
-  position: absolute;
-  bottom: 5%;
-  right: 5%;
+  position: fixed;
+  bottom: 38%;
+  right: 66%;
 }
 
 .card-placeholder {
     display: flex;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    padding-left: 7%;
     height: 500px;
     overflow-y:scroll;
-
+    border-radius: 15px;
+    background-color: rgb(176, 190, 197);
+    padding-left: 0;
 }
 
-.md-list-item {
+.col-xs-3 {
+  width: 26% !important;
+}
+
+.navbar {
+    background-color: rgb(84, 110, 122);
 }
 
 .sm-list-item-text {
   height: 150px;
 
+}
+
+.card-block {
+  width: 90%;
+
+}
+
+md-list-item, md-list-item .md-list-item-inner {
+  border-radius: 10px!important;
+  margin-bottom: 10%!important;
+  margin-left: 12%;
+
+}
+
+.card-header {
+  background-color: rgb(84, 110, 122);
+    width: auto;
+    margin-top: 0;
+    margin-bottom: 10%;
+    width: 116%;
+    border-top-right-radius: 5px;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 
 
@@ -68,8 +101,8 @@
 }
 
 
-.settings-board {
-  margin-top: 700px;
-  height: auto;
-  border-style: solid;
-}
+// .settings-board {
+//   margin-top: 700px;
+//   height: auto;
+//   border-style: solid;
+// }

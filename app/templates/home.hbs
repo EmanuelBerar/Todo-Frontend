@@ -105,7 +105,7 @@
       </div>
   {{/if}}
 <!-- #################################################################################################################################################################################################### -->
-<div class="container header">
+<!-- <div class="container header">
 <div >
   {{#paper-button class="settings-button" onClick=(action "addTask" taskDescription selectedUser.id selectedTaskType.id)}}Settings
   {{#paper-tooltip zIndex}}
@@ -113,12 +113,36 @@
   {{/paper-tooltip}}
   {{/paper-button}}
 </div>
-</div>
-<div class="container container-card">
+</div> -->
 
-  <div class="card-placeholder col-xs-4 ">
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          {{#paper-button class="settings-button" onClick=(action "addTask" taskDescription selectedUser.id selectedTaskType.id)}}Settings <span class="arrow_box" aria-hidden="true"></span>
+          {{#paper-tooltip zIndex}}
+          Make more changes!
+          {{/paper-tooltip}}
+          {{/paper-button}}
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+<div class="container-fluid container-card">
+  <div class="card-placeholder col-xs-3 ">
       <div class="card-block">
-        <h2 class="card-header todo-progress-done">Todo</h2>
+        <h2 class="card-header">Todo</h2>
         {{#each todoTasks as |task|}}
         {{#draggable-object content=task}}
           {{#paper-item class="lg-4-line"}}
@@ -143,7 +167,8 @@
   </div>
 
 
-  <div class="card-placeholder col-xs-4">
+
+  <div class="card-placeholder col-xs-3 col-xs-offset-1">
     <div class="card-block">
       <h2 class="card-header">In progress</h2>
       {{#draggable-object-target action="updateStatus" status="progress"}}
@@ -163,7 +188,9 @@
     </div>
   </div>
 
-  <div class="card-placeholder col-xs-4">
+
+
+  <div class="card-placeholder col-xs-3 col-xs-offset-1">
     <div class="card-block">
       <h2 class="card-header">Done</h2>
       {{#draggable-object-target action="updateStatus" status="done"}}
@@ -183,7 +210,9 @@
 </div>
 
 
-<div class="container settings-board">
+
+
+<!-- <div class="container settings-board">
   {{#paper-list}}
   {{#paper-subheader}}<strong>Users</strong>{{/paper-subheader}}
   {{#each users as |user|}}
@@ -197,4 +226,4 @@
 
 
 
-</div>
+</div> -->
