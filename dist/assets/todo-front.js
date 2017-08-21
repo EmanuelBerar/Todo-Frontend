@@ -956,6 +956,782 @@ define('todo-front/components/ember-wormhole', ['exports', 'ember-wormhole/compo
     }
   });
 });
+define('todo-front/components/materialize-badge', ['exports', 'ember', 'todo-front/components/md-badge'], function (exports, _ember, _mdBadge) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdBadge.default.extend({
+    init: function init() {
+      this._super.apply(this, arguments);
+      _ember.default.deprecate("{{materialize-badge}} has been deprecated. Please use {{md-badge}} instead", false, { url: "https://github.com/sgasser/ember-cli-materialize/issues/67" });
+    }
+  });
+});
+define('todo-front/components/materialize-button-submit', ['exports', 'ember', 'todo-front/components/md-btn-submit'], function (exports, _ember, _mdBtnSubmit) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdBtnSubmit.default.extend({
+    init: function init() {
+      this._super.apply(this, arguments);
+      _ember.default.deprecate("{{materialize-button-submit}} has been deprecated. Please use {{md-btn-submit}} instead", false, { url: "https://github.com/sgasser/ember-cli-materialize/issues/67" });
+    }
+  });
+});
+define('todo-front/components/materialize-button', ['exports', 'ember', 'todo-front/components/md-btn'], function (exports, _ember, _mdBtn) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdBtn.default.extend({
+    init: function init() {
+      this._super.apply(this, arguments);
+      _ember.default.deprecate("{{materialize-button}} has been deprecated. Please use {{md-btn}} instead", false, { url: "https://github.com/sgasser/ember-cli-materialize/issues/67" });
+    }
+  });
+});
+define('todo-front/components/materialize-card-action', ['exports', 'ember', 'todo-front/components/md-card-action'], function (exports, _ember, _mdCardAction) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdCardAction.default.extend({
+    init: function init() {
+      this._super.apply(this, arguments);
+      _ember.default.deprecate("{{materialize-card-action}} has been deprecated. Please use {{md-card-action}} instead", false, { url: "https://github.com/sgasser/ember-cli-materialize/issues/67" });
+    }
+  });
+});
+define('todo-front/components/materialize-card-content', ['exports', 'ember', 'todo-front/components/md-card-content'], function (exports, _ember, _mdCardContent) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdCardContent.default.extend({
+    init: function init() {
+      this._super.apply(this, arguments);
+      _ember.default.deprecate("{{materialize-card-content}} has been deprecated. Please use {{md-card-content}} instead", false, { url: "https://github.com/sgasser/ember-cli-materialize/issues/67" });
+    }
+  });
+});
+define('todo-front/components/materialize-card-panel', ['exports', 'ember', 'todo-front/components/md-card-panel'], function (exports, _ember, _mdCardPanel) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdCardPanel.default.extend({
+    init: function init() {
+      this._super.apply(this, arguments);
+      _ember.default.deprecate("{{materialize-card-panel}} has been deprecated. Please use {{md-card-panel}} instead", false, { url: "https://github.com/sgasser/ember-cli-materialize/issues/67" });
+    }
+  });
+});
+define('todo-front/components/materialize-card-reveal', ['exports', 'ember', 'todo-front/components/md-card-reveal'], function (exports, _ember, _mdCardReveal) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdCardReveal.default.extend({
+    init: function init() {
+      this._super.apply(this, arguments);
+      _ember.default.deprecate("{{materialize-card-reveal}} has been deprecated. Please use {{md-card-reveal}} instead", false, { url: "https://github.com/sgasser/ember-cli-materialize/issues/67" });
+    }
+  });
+});
+define('todo-front/components/materialize-card', ['exports', 'ember', 'todo-front/components/md-card'], function (exports, _ember, _mdCard) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdCard.default.extend({
+    init: function init() {
+      this._super.apply(this, arguments);
+      _ember.default.deprecate("{{materialize-card}} has been deprecated. Please use {{md-card}} instead", false, { url: "https://github.com/sgasser/ember-cli-materialize/issues/67" });
+    }
+  });
+});
+define('todo-front/components/materialize-checkbox', ['exports', 'ember', 'todo-front/components/md-check'], function (exports, _ember, _mdCheck) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdCheck.default.extend({
+    init: function init() {
+      this._super.apply(this, arguments);
+      _ember.default.deprecate("{{materialize-checkbox}} has been deprecated. Please use {{md-check}} instead", false, { url: "https://github.com/sgasser/ember-cli-materialize/issues/67" });
+    }
+  });
+});
+define('todo-front/components/materialize-checkboxes', ['exports', 'ember', 'todo-front/components/md-checks'], function (exports, _ember, _mdChecks) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdChecks.default.extend({
+    init: function init() {
+      this._super.apply(this, arguments);
+      _ember.default.deprecate("{{materialize-checkboxes}} has been deprecated. Please use {{md-checks}} instead", false, { url: "https://github.com/sgasser/ember-cli-materialize/issues/67" });
+    }
+  });
+});
+define('todo-front/components/materialize-collapsible-card', ['exports', 'ember', 'todo-front/components/md-card-collapsible'], function (exports, _ember, _mdCardCollapsible) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdCardCollapsible.default.extend({
+    init: function init() {
+      this._super.apply(this, arguments);
+      _ember.default.deprecate("{{materialize-collapsible-card}} has been deprecated. Please use {{md-card-collapsible}} instead", false, { url: "https://github.com/sgasser/ember-cli-materialize/issues/67" });
+    }
+  });
+});
+define('todo-front/components/materialize-collapsible', ['exports', 'ember', 'todo-front/components/md-collapsible'], function (exports, _ember, _mdCollapsible) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdCollapsible.default.extend({
+    init: function init() {
+      this._super.apply(this, arguments);
+      _ember.default.deprecate("{{materialize-collapsible}} has been deprecated. Please use {{md-collapsible}} instead", false, { url: "https://github.com/sgasser/ember-cli-materialize/issues/67" });
+    }
+  });
+});
+define('todo-front/components/materialize-copyright', ['exports', 'ember', 'todo-front/components/md-copyright'], function (exports, _ember, _mdCopyright) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdCopyright.default.extend({
+    init: function init() {
+      this._super.apply(this, arguments);
+      _ember.default.deprecate("{{materialize-copyright}} has been deprecated. Please use {{md-copyright}} instead", false, { url: "https://github.com/sgasser/ember-cli-materialize/issues/67" });
+    }
+  });
+});
+define('todo-front/components/materialize-date-input', ['exports', 'ember', 'todo-front/components/md-input-date'], function (exports, _ember, _mdInputDate) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdInputDate.default.extend({
+    init: function init() {
+      this._super.apply(this, arguments);
+      _ember.default.deprecate("{{materialize-date-input}} has been deprecated. Please use {{md-input-date}} instead", false, { url: "https://github.com/sgasser/ember-cli-materialize/issues/67" });
+    }
+  });
+});
+define('todo-front/components/materialize-input-field', ['exports', 'ember', 'todo-front/components/md-input-field'], function (exports, _ember, _mdInputField) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdInputField.default.extend({
+    init: function init() {
+      this._super.apply(this, arguments);
+      _ember.default.deprecate("{{materialize-input-field}} has been deprecated. Please use {{md-input-field}} instead", false, { url: "https://github.com/sgasser/ember-cli-materialize/issues/67" });
+    }
+  });
+});
+define('todo-front/components/materialize-input', ['exports', 'ember', 'todo-front/components/md-input'], function (exports, _ember, _mdInput) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdInput.default.extend({
+    init: function init() {
+      this._super.apply(this, arguments);
+      _ember.default.deprecate("{{materialize-input}} has been deprecated. Please use {{md-input}} instead", false, { url: "https://github.com/sgasser/ember-cli-materialize/issues/67" });
+    }
+  });
+});
+define('todo-front/components/materialize-loader', ['exports', 'ember', 'todo-front/components/md-loader'], function (exports, _ember, _mdLoader) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdLoader.default.extend({
+    init: function init() {
+      this._super.apply(this, arguments);
+      _ember.default.deprecate("{{materialize-loader}} has been deprecated. Please use {{md-loader}} instead", false, { url: "https://github.com/sgasser/ember-cli-materialize/issues/67" });
+    }
+  });
+});
+define('todo-front/components/materialize-modal', ['exports', 'ember', 'todo-front/components/md-modal'], function (exports, _ember, _mdModal) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdModal.default.extend({
+    init: function init() {
+      this._super.apply(this, arguments);
+      _ember.default.deprecate("{{materialize-modal}} has been deprecated. Please use {{md-modal}} instead", false, { url: "https://github.com/sgasser/ember-cli-materialize/issues/67" });
+    }
+  });
+});
+define('todo-front/components/materialize-navbar', ['exports', 'ember', 'todo-front/components/md-navbar'], function (exports, _ember, _mdNavbar) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdNavbar.default.extend({
+    init: function init() {
+      this._super.apply(this, arguments);
+      _ember.default.deprecate("{{materialize-navbar}} has been deprecated. Please use {{md-navbar}} instead", false, { url: "https://github.com/sgasser/ember-cli-materialize/issues/67" });
+    }
+  });
+});
+define('todo-front/components/materialize-pagination', ['exports', 'ember', 'todo-front/components/md-pagination'], function (exports, _ember, _mdPagination) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdPagination.default.extend({
+    init: function init() {
+      this._super.apply(this, arguments);
+      _ember.default.deprecate("{{materialize-pagination}} has been deprecated. Please use {{md-pagination}} instead", false, { url: "https://github.com/sgasser/ember-cli-materialize/issues/67" });
+    }
+  });
+});
+define('todo-front/components/materialize-parallax', ['exports', 'ember', 'todo-front/components/md-parallax'], function (exports, _ember, _mdParallax) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdParallax.default.extend({
+    init: function init() {
+      this._super.apply(this, arguments);
+      _ember.default.deprecate("{{materialize-parallax}} has been deprecated. Please use {{md-parallax}} instead", false, { url: "https://github.com/sgasser/ember-cli-materialize/issues/67" });
+    }
+  });
+});
+define('todo-front/components/materialize-radio', ['exports', 'ember', 'todo-front/components/md-radio'], function (exports, _ember, _mdRadio) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdRadio.default.extend({
+    init: function init() {
+      this._super.apply(this, arguments);
+      _ember.default.deprecate("{{materialize-radio}} has been deprecated. Please use {{md-radio}} instead", false, { url: "https://github.com/sgasser/ember-cli-materialize/issues/67" });
+    }
+  });
+});
+define('todo-front/components/materialize-radios', ['exports', 'ember', 'todo-front/components/md-radios'], function (exports, _ember, _mdRadios) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdRadios.default.extend({
+    init: function init() {
+      this._super.apply(this, arguments);
+      _ember.default.deprecate("{{materialize-radios}} has been deprecated. Please use {{md-radios}} instead", false, { url: "https://github.com/sgasser/ember-cli-materialize/issues/67" });
+    }
+  });
+});
+define('todo-front/components/materialize-range', ['exports', 'ember', 'todo-front/components/md-range'], function (exports, _ember, _mdRange) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdRange.default.extend({
+    init: function init() {
+      this._super.apply(this, arguments);
+      _ember.default.deprecate("{{materialize-range}} has been deprecated. Please use {{md-range}} instead", false, { url: "https://github.com/sgasser/ember-cli-materialize/issues/67" });
+    }
+  });
+});
+define('todo-front/components/materialize-select', ['exports', 'ember', 'todo-front/components/md-select'], function (exports, _ember, _mdSelect) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdSelect.default.extend({
+    init: function init() {
+      this._super.apply(this, arguments);
+      _ember.default.deprecate("{{materialize-select}} has been deprecated. Please use {{md-select}} instead", false, { url: "https://github.com/sgasser/ember-cli-materialize/issues/67" });
+    }
+  });
+});
+define('todo-front/components/materialize-switch', ['exports', 'ember', 'todo-front/components/md-switch'], function (exports, _ember, _mdSwitch) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdSwitch.default.extend({
+    init: function init() {
+      this._super.apply(this, arguments);
+      _ember.default.deprecate("{{materialize-switch}} has been deprecated. Please use {{md-switch}} instead", false, { url: "https://github.com/sgasser/ember-cli-materialize/issues/67" });
+    }
+  });
+});
+define('todo-front/components/materialize-switches', ['exports', 'ember', 'todo-front/components/md-switches'], function (exports, _ember, _mdSwitches) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdSwitches.default.extend({
+    init: function init() {
+      this._super.apply(this, arguments);
+      _ember.default.deprecate("{{materialize-switches}} has been deprecated. Please use {{md-switches}} instead", false, { url: "https://github.com/sgasser/ember-cli-materialize/issues/67" });
+    }
+  });
+});
+define('todo-front/components/materialize-tabs-tab', ['exports', 'ember', 'todo-front/components/md-tab'], function (exports, _ember, _mdTab) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdTab.default.extend({
+    init: function init() {
+      this._super.apply(this, arguments);
+      _ember.default.deprecate("{{materialize-tabs-tab}} has been deprecated. Please use {{md-tab}} instead", false, { url: "https://github.com/sgasser/ember-cli-materialize/issues/67" });
+    }
+  });
+});
+define('todo-front/components/materialize-tabs', ['exports', 'ember', 'todo-front/components/md-tabs'], function (exports, _ember, _mdTabs) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdTabs.default.extend({
+    init: function init() {
+      this._super.apply(this, arguments);
+      _ember.default.deprecate("{{materialize-tabs}} has been deprecated. Please use {{md-tabs}} instead", false, { url: "https://github.com/sgasser/ember-cli-materialize/issues/67" });
+    }
+  });
+});
+define('todo-front/components/materialize-textarea', ['exports', 'ember', 'todo-front/components/md-textarea'], function (exports, _ember, _mdTextarea) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdTextarea.default.extend({
+    init: function init() {
+      this._super.apply(this, arguments);
+      _ember.default.deprecate("{{materialize-textarea}} has been deprecated. Please use {{md-textarea}} instead", false, { url: "https://github.com/sgasser/ember-cli-materialize/issues/67" });
+    }
+  });
+});
+define('todo-front/components/md-badge', ['exports', 'ember-cli-materialize/components/md-badge'], function (exports, _mdBadge) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdBadge.default;
+});
+define('todo-front/components/md-btn-dropdown', ['exports', 'ember-cli-materialize/components/md-btn-dropdown'], function (exports, _mdBtnDropdown) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdBtnDropdown.default;
+});
+define('todo-front/components/md-btn-submit', ['exports', 'ember-cli-materialize/components/md-btn-submit'], function (exports, _mdBtnSubmit) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdBtnSubmit.default;
+});
+define('todo-front/components/md-btn', ['exports', 'ember-cli-materialize/components/md-btn'], function (exports, _mdBtn) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdBtn.default;
+});
+define('todo-front/components/md-card-action', ['exports', 'ember-cli-materialize/components/md-card-action'], function (exports, _mdCardAction) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdCardAction.default;
+});
+define('todo-front/components/md-card-collapsible', ['exports', 'ember-cli-materialize/components/md-card-collapsible'], function (exports, _mdCardCollapsible) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdCardCollapsible.default;
+});
+define('todo-front/components/md-card-content', ['exports', 'ember-cli-materialize/components/md-card-content'], function (exports, _mdCardContent) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdCardContent.default;
+});
+define('todo-front/components/md-card-panel', ['exports', 'ember-cli-materialize/components/md-card-panel'], function (exports, _mdCardPanel) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdCardPanel.default;
+});
+define('todo-front/components/md-card-reveal', ['exports', 'ember-cli-materialize/components/md-card-reveal'], function (exports, _mdCardReveal) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdCardReveal.default;
+});
+define('todo-front/components/md-card', ['exports', 'ember-cli-materialize/components/md-card'], function (exports, _mdCard) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdCard.default;
+});
+define('todo-front/components/md-check', ['exports', 'ember-cli-materialize/components/md-check'], function (exports, _mdCheck) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdCheck.default;
+});
+define('todo-front/components/md-checks-check', ['exports', 'ember-cli-materialize/components/md-checks-check'], function (exports, _mdChecksCheck) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdChecksCheck.default;
+    }
+  });
+});
+define('todo-front/components/md-checks', ['exports', 'ember-cli-materialize/components/md-checks'], function (exports, _mdChecks) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdChecks.default;
+});
+define('todo-front/components/md-collapsible', ['exports', 'ember-cli-materialize/components/md-collapsible'], function (exports, _mdCollapsible) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdCollapsible.default;
+});
+define('todo-front/components/md-collection', ['exports', 'ember-cli-materialize/components/md-collection'], function (exports, _mdCollection) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdCollection.default;
+    }
+  });
+});
+define('todo-front/components/md-copyright', ['exports', 'ember-cli-materialize/components/md-copyright'], function (exports, _mdCopyright) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdCopyright.default;
+});
+define('todo-front/components/md-default-collection-header', ['exports', 'ember-cli-materialize/components/md-default-collection-header'], function (exports, _mdDefaultCollectionHeader) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdDefaultCollectionHeader.default;
+    }
+  });
+});
+define('todo-front/components/md-default-column-header', ['exports', 'ember-cli-materialize/components/md-default-column-header'], function (exports, _mdDefaultColumnHeader) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdDefaultColumnHeader.default;
+    }
+  });
+});
+define('todo-front/components/md-fixed-btn', ['exports', 'ember-cli-materialize/components/md-fixed-btn'], function (exports, _mdFixedBtn) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdFixedBtn.default;
+    }
+  });
+});
+define('todo-front/components/md-fixed-btns', ['exports', 'ember-cli-materialize/components/md-fixed-btns'], function (exports, _mdFixedBtns) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdFixedBtns.default;
+    }
+  });
+});
+define('todo-front/components/md-input-date', ['exports', 'ember-cli-materialize/components/md-input-date'], function (exports, _mdInputDate) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdInputDate.default;
+});
+define('todo-front/components/md-input-field', ['exports', 'ember-cli-materialize/components/md-input-field'], function (exports, _mdInputField) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdInputField.default;
+});
+define('todo-front/components/md-input', ['exports', 'ember-cli-materialize/components/md-input'], function (exports, _mdInput) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdInput.default;
+});
+define('todo-front/components/md-loader', ['exports', 'ember-cli-materialize/components/md-loader'], function (exports, _mdLoader) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdLoader.default;
+});
+define('todo-front/components/md-modal-container', ['exports', 'ember-cli-materialize/components/md-modal-container'], function (exports, _mdModalContainer) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdModalContainer.default;
+});
+define('todo-front/components/md-modal', ['exports', 'ember-cli-materialize/components/md-modal'], function (exports, _mdModal) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdModal.default;
+});
+define('todo-front/components/md-navbar', ['exports', 'ember-cli-materialize/components/md-navbar'], function (exports, _mdNavbar) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdNavbar.default;
+});
+define('todo-front/components/md-pagination', ['exports', 'ember-cli-materialize/components/md-pagination'], function (exports, _mdPagination) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdPagination.default;
+});
+define('todo-front/components/md-parallax', ['exports', 'ember-cli-materialize/components/md-parallax'], function (exports, _mdParallax) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdParallax.default;
+});
+define('todo-front/components/md-radio', ['exports', 'ember-cli-materialize/components/md-radio'], function (exports, _mdRadio) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdRadio.default;
+});
+define('todo-front/components/md-radios-radio', ['exports', 'ember-cli-materialize/components/md-radios-radio'], function (exports, _mdRadiosRadio) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdRadiosRadio.default;
+    }
+  });
+});
+define('todo-front/components/md-radios', ['exports', 'ember-cli-materialize/components/md-radios'], function (exports, _mdRadios) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdRadios.default;
+});
+define('todo-front/components/md-range', ['exports', 'ember-cli-materialize/components/md-range'], function (exports, _mdRange) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdRange.default;
+});
+define('todo-front/components/md-select', ['exports', 'ember-cli-materialize/components/md-select'], function (exports, _mdSelect) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdSelect.default;
+});
+define('todo-front/components/md-switch', ['exports', 'ember-cli-materialize/components/md-switch'], function (exports, _mdSwitch) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdSwitch.default;
+});
+define('todo-front/components/md-switches-switch', ['exports', 'ember-cli-materialize/components/md-switches-switch'], function (exports, _mdSwitchesSwitch) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdSwitchesSwitch.default;
+    }
+  });
+});
+define('todo-front/components/md-switches', ['exports', 'ember-cli-materialize/components/md-switches'], function (exports, _mdSwitches) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdSwitches.default;
+});
+define('todo-front/components/md-tab', ['exports', 'ember-cli-materialize/components/md-tab'], function (exports, _mdTab) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdTab.default;
+});
+define('todo-front/components/md-table-col', ['exports', 'ember-cli-materialize/components/md-table-col'], function (exports, _mdTableCol) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdTableCol.default;
+    }
+  });
+});
+define('todo-front/components/md-table', ['exports', 'ember-cli-materialize/components/md-table'], function (exports, _mdTable) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdTable.default;
+    }
+  });
+});
+define('todo-front/components/md-tabs', ['exports', 'ember-cli-materialize/components/md-tabs'], function (exports, _mdTabs) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdTabs.default;
+});
+define('todo-front/components/md-textarea', ['exports', 'ember-cli-materialize/components/md-textarea'], function (exports, _mdTextarea) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _mdTextarea.default;
+});
 define('todo-front/components/modal-dialog-overlay', ['exports', 'ember-modal-dialog/components/modal-dialog-overlay'], function (exports, _modalDialogOverlay) {
   'use strict';
 
@@ -2138,6 +2914,55 @@ define('todo-front/controllers/home', ['exports', 'ember'], function (exports, _
 
   });
 });
+define('todo-front/controllers/settings', ['exports', 'ember'], function (exports, _ember) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.default = _ember.default.Controller.extend({
+
+    users: _ember.default.computed(function () {
+      return this.get('store').findAll('user');
+    }),
+
+    tasktypes: _ember.default.computed(function () {
+      return this.get('store').findAll('tasktype');
+    }),
+
+    actions: {
+      addUser: function addUser(userName) {
+        var us = this.store.createRecord('user', {
+          name: userName
+        });
+        us.save();
+      },
+      addTaskType: function addTaskType(taskTypeName) {
+        var tt = this.store.createRecord('tasktype', {
+          name: taskTypeName
+        });
+        tt.save();
+      },
+      deleteuser: function deleteuser(userid) {
+        var store = this.get('store');
+        store.findRecord('user', userid, { backgroundReload: false }).then(function (user) {
+          user.deleteRecord();
+          user.get('isDeleted');
+          user.save();
+        });
+      },
+      deletetasktype: function deletetasktype(tasktypeid) {
+        var store = this.get('store');
+        store.findRecord('tasktype', tasktypeid, { backgroundReload: false }).then(function (tasktype) {
+          tasktype.deleteRecord();
+          tasktype.get('isDeleted');
+          tasktype.save();
+        });
+      }
+    }
+
+  });
+});
 define('todo-front/helpers/-paper-underscore', ['exports', 'ember-paper/helpers/underscore'], function (exports, _underscore) {
   'use strict';
 
@@ -2234,6 +3059,25 @@ define('todo-front/helpers/bs-eq', ['exports', 'ember-bootstrap/helpers/bs-eq'],
     enumerable: true,
     get: function () {
       return _bsEq.eq;
+    }
+  });
+});
+define('todo-front/helpers/bw-compat-icon', ['exports', 'ember-cli-materialize/helpers/bw-compat-icon'], function (exports, _bwCompatIcon) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _bwCompatIcon.default;
+    }
+  });
+  Object.defineProperty(exports, 'bwCompatIcon', {
+    enumerable: true,
+    get: function () {
+      return _bwCompatIcon.bwCompatIcon;
     }
   });
 });
@@ -2766,6 +3610,32 @@ define('todo-front/initializers/load-bootstrap-config', ['exports', 'todo-front/
     initialize: initialize
   };
 });
+define('todo-front/initializers/md-settings', ['exports', 'todo-front/config/environment', 'ember-cli-materialize/services/md-settings'], function (exports, _environment, _mdSettings) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  exports.initialize = initialize;
+  function initialize() {
+    var materializeDefaults = _environment.default.materializeDefaults;
+
+    var application = arguments[1] || arguments[0];
+
+    if (window && window.validate_field) {
+      window.validate_field = function () {};
+    }
+
+    application.register('config:materialize', materializeDefaults, { instantiate: false });
+    application.register('service:materialize-settings', _mdSettings.default);
+    application.inject('service:materialize-settings', 'materializeDefaults', 'config:materialize');
+  }
+
+  exports.default = {
+    name: 'md-settings',
+    initialize: initialize
+  };
+});
 define('todo-front/initializers/store', ['exports'], function (exports) {
   'use strict';
 
@@ -3109,6 +3979,19 @@ define('todo-front/services/drag-coordinator', ['exports', 'ember-drag-drop/serv
     value: true
   });
   exports.default = _dragCoordinator.default;
+});
+define('todo-front/services/md-settings', ['exports', 'ember-cli-materialize/services/md-settings'], function (exports, _mdSettings) {
+  'use strict';
+
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  Object.defineProperty(exports, 'default', {
+    enumerable: true,
+    get: function () {
+      return _mdSettings.default;
+    }
+  });
 });
 define('todo-front/services/modal-dialog', ['exports', 'ember', 'todo-front/config/environment'], function (exports, _ember, _environment) {
   'use strict';
@@ -3490,7 +4373,7 @@ define("todo-front/templates/home", ["exports"], function (exports) {
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "pw4xRaQL", "block": "{\"statements\":[[4,\"\\n<div class=\\\"layout-row layout-align-center center-list\\\">\\n{{#paper-card as |card|}}\\n      <div class=\\\"layout-row layout-align-center-center\\\">\\n        <h2>Todo</h2>\\n        {{#paper-button onClick=(action \\\"toggleModal\\\") iconButton=true}}{{paper-icon \\\"add\\\" size=24}}{{/paper-button}}\\n      </div>\\n      <div class=\\\"card-size scrollable\\\">\\n        {{#paper-list}}\\n            {{#each todoTasks as |task|}}\\n              {{#paper-item class=\\\"md-3-line\\\"}}\\n                <div class=\\\"md-list-item-text\\\">\\n                  <h3>{{task.id}}-{{task.description }}</h3>\\n                  <p>Type: {{task.tasktype.name }}</p>\\n                  <h4>Assigned to: {{task.user.name }}</h4>\\n                </div>\\n                {{paper-divider}}\\n              {{/paper-item}}\\n            {{/each}}\\n        {{/paper-list}}\\n    </div>\\n  {{/paper-card}}\\n{{#paper-card as |card|}}\\n      <div class=\\\"layout-row layout-align-center-center\\\">\\n        <h2>Progress</h2>\\n        {{#paper-button onClick=(action \\\"updateTask\\\") iconButton=true}}{{paper-icon \\\"update\\\" size=24}}{{/paper-button}}\\n\\n      </div>\\n    <div class=\\\"card-size scrollable\\\">\\n      {{#paper-list}}\\n          {{#each progressTasks as |task|}}\\n            {{#paper-item class=\\\"md-3-line\\\"}}\\n              <div class=\\\"md-list-item-text\\\">\\n                <h3>{{task.id}}-{{task.description }}</h3>\\n                <p>Type: {{task.tasktype.name }}</p>\\n                <h4>Assigned to: {{task.user.name }}</h4>\\n              </div>\\n              {{paper-divider}}\\n            {{/paper-item}}\\n          {{/each}}\\n      {{/paper-list}}\\n    </div>\\n  {{/paper-card}}\\n{{#paper-card as |card|}}\\n      <div class=\\\"layout-row layout-align-center-center\\\">\\n        <h2>Done</h2>\\n      </div>\\n      <div class=\\\"card-size scrollable\\\">\\n        {{#paper-list}}\\n            {{#each doneTasks as |task|}}\\n              {{#paper-item class=\\\"md-3-line\\\"}}\\n                <div class=\\\"md-list-item-text\\\">\\n                  <h3>{{task.id}}-{{task.description }}</h3>\\n                  <p>Type: {{task.tasktype.name }}</p>\\n                  <h4>Assigned to: {{task.user.name }}</h4>\\n                </div>\\n                {{paper-divider}}\\n              {{/paper-item}}\\n            {{/each}}\\n        {{/paper-list}}\\n      </div>\\n  {{/paper-card}}</div> \"],[0,\"\\n\\n\"],[4,\" ####################################################################################################################################################################################################### \"],[0,\"\\n\"],[6,[\"if\"],[[28,[\"isShowingModal\"]]],null,{\"statements\":[[0,\"      \"],[11,\"div\",[]],[15,\"class\",\"layout-row layout-align-center\"],[13],[0,\"\\n\"],[6,[\"modal-dialog\"],null,[[\"onClose\",\"targetAttachment\",\"translucentOverlay\"],[\"toggleModal\",\"center\",true]],{\"statements\":[[0,\"\\n\"],[6,[\"paper-form\"],null,null,{\"statements\":[[0,\"              \"],[11,\"div\",[]],[15,\"class\",\"layout-column\"],[13],[0,\"\\n\\n                \"],[1,[33,[\"component\"],[[28,[\"form\",\"input\"]]],[[\"label\",\"value\",\"onChange\",\"required\"],[\"Description\",[28,[\"taskDescription\"]],[33,[\"action\"],[[28,[null]],[33,[\"mut\"],[[28,[\"taskDescription\"]]],null]],null],true]]],false],[0,\"\\n\\n\"],[6,[\"component\"],[[28,[\"form\",\"select\"]]],[[\"placeholder\",\"selected\",\"options\",\"onChange\"],[\"Assign to a user\",[28,[\"selectedUser\"]],[28,[\"users\"]],[33,[\"action\"],[[28,[null]],[33,[\"mut\"],[[28,[\"selectedUser\"]]],null]],null]]],{\"statements\":[[0,\"                  \"],[1,[28,[\"user\",\"name\"]],false],[0,\"\\n\"]],\"locals\":[\"user\"]},null],[0,\"\\n\"],[6,[\"component\"],[[28,[\"form\",\"select\"]]],[[\"placeholder\",\"selected\",\"options\",\"onChange\"],[\"Type of Tasks\",[28,[\"selectedTaskType\"]],[28,[\"tasktypes\"]],[33,[\"action\"],[[28,[null]],[33,[\"mut\"],[[28,[\"selectedTaskType\"]]],null]],null]]],{\"statements\":[[0,\"                  \"],[1,[28,[\"tasktype\",\"name\"]],false],[0,\"\\n\"]],\"locals\":[\"tasktype\"]},null],[0,\"\\n              \"],[14],[0,\"\\n\\n              \"],[6,[\"paper-button\"],null,[[\"onClick\"],[[33,[\"action\"],[[28,[null]],\"addTask\",[28,[\"taskDescription\"]],[28,[\"selectedUser\",\"id\"]],[28,[\"selectedTaskType\",\"id\"]]],null]]],{\"statements\":[[0,\"Create Task\"]],\"locals\":[]},null],[0,\"\\n              \"],[6,[\"paper-button\"],null,[[\"onClick\"],[[33,[\"action\"],[[28,[null]],\"toggleModal\"],null]]],{\"statements\":[[0,\"Cancel\"]],\"locals\":[]},null],[0,\"\\n\\n\\n\"]],\"locals\":[\"form\"]},null]],\"locals\":[]},null],[0,\"      \"],[14],[0,\"\\n\"]],\"locals\":[]},null],[4,\" #################################################################################################################################################################################################### \"],[0,\"\\n\"],[4,\" <div class=\\\"container header\\\">\\n<div >\\n  {{#paper-button class=\\\"settings-button\\\" onClick=(action \\\"addTask\\\" taskDescription selectedUser.id selectedTaskType.id)}}Settings\\n  {{#paper-tooltip zIndex}}\\n  Make more changes!\\n  {{/paper-tooltip}}\\n  {{/paper-button}}</div>\\n</div> \"],[0,\"\\n\\n\\n\"],[11,\"nav\",[]],[15,\"class\",\"navbar navbar-default\"],[13],[0,\"\\n  \"],[11,\"div\",[]],[15,\"class\",\"container-fluid\"],[13],[0,\"\\n    \"],[4,\" Brand and toggle get grouped for better mobile display \"],[0,\"\\n    \"],[11,\"div\",[]],[15,\"class\",\"navbar-header\"],[13],[0,\"\\n\\n    \"],[14],[0,\"\\n\\n    \"],[4,\" Collect the nav links, forms, and other content for toggling \"],[0,\"\\n    \"],[11,\"div\",[]],[15,\"class\",\"collapse navbar-collapse\"],[15,\"id\",\"bs-example-navbar-collapse-1\"],[13],[0,\"\\n      \"],[11,\"ul\",[]],[15,\"class\",\"nav navbar-nav navbar-right\"],[13],[0,\"\\n        \"],[11,\"li\",[]],[13],[0,\"\\n          \"],[6,[\"paper-button\"],null,[[\"class\",\"onClick\"],[\"settings-button\",[33,[\"action\"],[[28,[null]],\"addTask\",[28,[\"taskDescription\"]],[28,[\"selectedUser\",\"id\"]],[28,[\"selectedTaskType\",\"id\"]]],null]]],{\"statements\":[[0,\"Settings \"],[11,\"span\",[]],[15,\"class\",\"arrow_box\"],[15,\"aria-hidden\",\"true\"],[13],[14],[0,\"\\n\"],[6,[\"paper-tooltip\"],[[28,[\"zIndex\"]]],null,{\"statements\":[[0,\"          Make more changes!\\n\"]],\"locals\":[]},null]],\"locals\":[]},null],[0,\"        \"],[14],[0,\"\\n      \"],[14],[0,\"\\n    \"],[14],[4,\" /.navbar-collapse \"],[0,\"\\n  \"],[14],[4,\" /.container-fluid \"],[0,\"\\n\"],[14],[0,\"\\n\\n\\n\"],[11,\"div\",[]],[15,\"class\",\"container-fluid container-card\"],[13],[0,\"\\n  \"],[11,\"div\",[]],[15,\"class\",\"card-placeholder col-xs-3 \"],[13],[0,\"\\n      \"],[11,\"div\",[]],[15,\"class\",\"card-block\"],[13],[0,\"\\n        \"],[11,\"h2\",[]],[15,\"class\",\"card-header\"],[13],[0,\"Todo\"],[14],[0,\"\\n\"],[6,[\"each\"],[[28,[\"todoTasks\"]]],null,{\"statements\":[[6,[\"draggable-object\"],null,[[\"content\"],[[28,[\"task\"]]]],{\"statements\":[[6,[\"paper-item\"],null,[[\"class\"],[\"lg-4-line\"]],{\"statements\":[[0,\"            \"],[11,\"div\",[]],[15,\"class\",\"sm-list-item-text\"],[13],[0,\"\\n              \"],[11,\"h4\",[]],[13],[11,\"strong\",[]],[13],[1,[28,[\"task\",\"id\"]],false],[0,\"-\"],[1,[28,[\"task\",\"description\"]],false],[14],[14],[0,\"\\n              \"],[11,\"p\",[]],[13],[0,\"Type: \"],[1,[28,[\"task\",\"tasktype\",\"name\"]],false],[14],[0,\"\\n              \"],[11,\"h5\",[]],[13],[0,\"Assigned to: \"],[1,[28,[\"task\",\"user\",\"name\"]],false],[14],[0,\"\\n            \"],[14],[0,\"\\n            \"],[1,[26,[\"paper-divider\"]],false],[0,\"\\n\"]],\"locals\":[]},null]],\"locals\":[]},null]],\"locals\":[\"task\"]},null],[0,\"\\n\"],[6,[\"paper-button\"],null,[[\"class\",\"onClick\",\"iconButton\",\"raised\"],[\"add-button\",[33,[\"action\"],[[28,[null]],\"toggleModal\"],null],true,true]],{\"statements\":[[0,\"        \"],[1,[33,[\"paper-icon\"],[\"add\"],null],false],[0,\"\\n\"],[6,[\"paper-tooltip\"],[[28,[\"zIndex\"]]],null,{\"statements\":[[0,\"        Add task\\n\"]],\"locals\":[]},null]],\"locals\":[]},null],[0,\"  \"],[14],[0,\"\\n\\n  \"],[14],[0,\"\\n\\n\\n\\n  \"],[11,\"div\",[]],[15,\"class\",\"card-placeholder col-xs-3 col-xs-offset-1\"],[13],[0,\"\\n    \"],[11,\"div\",[]],[15,\"class\",\"card-block\"],[13],[0,\"\\n      \"],[11,\"h2\",[]],[15,\"class\",\"card-header\"],[13],[0,\"In progress\"],[14],[0,\"\\n\"],[6,[\"draggable-object-target\"],null,[[\"action\",\"status\"],[\"updateStatus\",\"progress\"]],{\"statements\":[[6,[\"each\"],[[28,[\"progressTasks\"]]],null,{\"statements\":[[6,[\"draggable-object\"],null,[[\"content\"],[[28,[\"task\"]]]],{\"statements\":[[6,[\"paper-item\"],null,[[\"class\"],[\"lg-4-line\"]],{\"statements\":[[0,\"          \"],[11,\"div\",[]],[15,\"class\",\"sm-list-item-text\"],[13],[0,\"\\n            \"],[11,\"h4\",[]],[13],[11,\"strong\",[]],[13],[1,[28,[\"task\",\"id\"]],false],[0,\"-\"],[1,[28,[\"task\",\"description\"]],false],[14],[14],[0,\"\\n            \"],[11,\"p\",[]],[13],[0,\"Type: \"],[1,[28,[\"task\",\"tasktype\",\"name\"]],false],[14],[0,\"\\n            \"],[11,\"h5\",[]],[13],[0,\"Assigned to: \"],[1,[28,[\"task\",\"user\",\"name\"]],false],[14],[0,\"\\n          \"],[14],[0,\"\\n          \"],[1,[26,[\"paper-divider\"]],false],[0,\"\\n\"]],\"locals\":[]},null]],\"locals\":[]},null]],\"locals\":[\"task\"]},null]],\"locals\":[]},null],[0,\"    \"],[14],[0,\"\\n  \"],[14],[0,\"\\n\\n\\n\\n  \"],[11,\"div\",[]],[15,\"class\",\"card-placeholder col-xs-3 col-xs-offset-1\"],[13],[0,\"\\n    \"],[11,\"div\",[]],[15,\"class\",\"card-block\"],[13],[0,\"\\n      \"],[11,\"h2\",[]],[15,\"class\",\"card-header\"],[13],[0,\"Done\"],[14],[0,\"\\n\"],[6,[\"draggable-object-target\"],null,[[\"action\",\"status\"],[\"updateStatus\",\"done\"]],{\"statements\":[[6,[\"each\"],[[28,[\"doneTasks\"]]],null,{\"statements\":[[6,[\"paper-item\"],null,[[\"class\"],[\"lg-4-line\"]],{\"statements\":[[0,\"          \"],[11,\"div\",[]],[15,\"class\",\"sm-list-item-text\"],[13],[0,\"\\n            \"],[11,\"h4\",[]],[13],[11,\"strong\",[]],[13],[1,[28,[\"task\",\"id\"]],false],[0,\"-\"],[1,[28,[\"task\",\"description\"]],false],[14],[14],[0,\"\\n            \"],[11,\"p\",[]],[13],[0,\"Type: \"],[1,[28,[\"task\",\"tasktype\",\"name\"]],false],[14],[0,\"\\n            \"],[11,\"h5\",[]],[13],[0,\"Assigned to: \"],[1,[28,[\"task\",\"user\",\"name\"]],false],[14],[0,\"\\n          \"],[14],[0,\"\\n          \"],[1,[26,[\"paper-divider\"]],false],[0,\"\\n\"]],\"locals\":[]},null]],\"locals\":[\"task\"]},null]],\"locals\":[]},null],[0,\"    \"],[14],[0,\"\\n  \"],[14],[0,\"\\n\"],[14],[0,\"\\n\\n\\n\\n\\n\"],[4,\" <div class=\\\"container settings-board\\\">\\n{{#paper-list}}\\n  {{#paper-subheader}}<strong>Users</strong>{{/paper-subheader}}\\n  {{#each users as |user|}}\\n    {{#paper-item class=\\\"md-3-line\\\"}}\\n      <div class=\\\"md-list-item-text\\\">\\n        <h3>{{user.name}}</h3>\\n      </div>\\n    {{/paper-item}}\\n    {{/each}}\\n  {{/paper-list}}\\n\\n\\n</div> \"],[0,\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"hasPartials\":false}", "meta": { "moduleName": "todo-front/templates/home.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "x1CFTcQe", "block": "{\"statements\":[[4,\" ####################################################################################################################################################################################################### \"],[0,\"\\n\"],[6,[\"if\"],[[28,[\"isShowingModal\"]]],null,{\"statements\":[[0,\"      \"],[11,\"div\",[]],[15,\"class\",\"layout-row layout-align-center\"],[13],[0,\"\\n\"],[6,[\"modal-dialog\"],null,[[\"onClose\",\"targetAttachment\",\"translucentOverlay\"],[\"toggleModal\",\"center\",true]],{\"statements\":[[0,\"\\n\"],[6,[\"paper-form\"],null,null,{\"statements\":[[0,\"              \"],[11,\"div\",[]],[15,\"class\",\"layout-column\"],[13],[0,\"\\n\\n                \"],[1,[33,[\"component\"],[[28,[\"form\",\"input\"]]],[[\"label\",\"value\",\"onChange\",\"required\"],[\"Description\",[28,[\"taskDescription\"]],[33,[\"action\"],[[28,[null]],[33,[\"mut\"],[[28,[\"taskDescription\"]]],null]],null],true]]],false],[0,\"\\n\\n\"],[6,[\"component\"],[[28,[\"form\",\"select\"]]],[[\"placeholder\",\"selected\",\"options\",\"onChange\"],[\"Assign to a user\",[28,[\"selectedUser\"]],[28,[\"users\"]],[33,[\"action\"],[[28,[null]],[33,[\"mut\"],[[28,[\"selectedUser\"]]],null]],null]]],{\"statements\":[[0,\"                  \"],[1,[28,[\"user\",\"name\"]],false],[0,\"\\n\"]],\"locals\":[\"user\"]},null],[0,\"\\n\"],[6,[\"component\"],[[28,[\"form\",\"select\"]]],[[\"placeholder\",\"selected\",\"options\",\"onChange\"],[\"Type of Tasks\",[28,[\"selectedTaskType\"]],[28,[\"tasktypes\"]],[33,[\"action\"],[[28,[null]],[33,[\"mut\"],[[28,[\"selectedTaskType\"]]],null]],null]]],{\"statements\":[[0,\"                  \"],[1,[28,[\"tasktype\",\"name\"]],false],[0,\"\\n\"]],\"locals\":[\"tasktype\"]},null],[0,\"\\n              \"],[14],[0,\"\\n\\n              \"],[6,[\"paper-button\"],null,[[\"onClick\"],[[33,[\"action\"],[[28,[null]],\"addTask\",[28,[\"taskDescription\"]],[28,[\"selectedUser\",\"id\"]],[28,[\"selectedTaskType\",\"id\"]]],null]]],{\"statements\":[[0,\"Create Task\"]],\"locals\":[]},null],[0,\"\\n              \"],[6,[\"paper-button\"],null,[[\"onClick\"],[[33,[\"action\"],[[28,[null]],\"toggleModal\"],null]]],{\"statements\":[[0,\"Cancel\"]],\"locals\":[]},null],[0,\"\\n\\n\\n\"]],\"locals\":[\"form\"]},null]],\"locals\":[]},null],[0,\"      \"],[14],[0,\"\\n\"]],\"locals\":[]},null],[4,\" #################################################################################################################################################################################################### \"],[0,\"\\n\"],[4,\" <div class=\\\"container header\\\">\\n<div >\\n  {{#paper-button class=\\\"settings-button\\\" onClick=(action \\\"addTask\\\" taskDescription selectedUser.id selectedTaskType.id)}}Settings\\n  {{#paper-tooltip zIndex}}\\n  Make more changes!\\n  {{/paper-tooltip}}\\n  {{/paper-button}}</div>\\n</div> \"],[0,\"\\n\\n\\n\"],[11,\"nav\",[]],[15,\"class\",\"navbar navbar-default\"],[13],[0,\"\\n  \"],[11,\"div\",[]],[15,\"class\",\"container-fluid\"],[13],[0,\"\\n    \"],[11,\"div\",[]],[15,\"class\",\"navbar-header navbar-left \"],[13],[0,\"\\n      \"],[11,\"h2\",[]],[13],[0,\"MY AWESOME APP\"],[14],[0,\"\\n    \"],[14],[0,\"\\n        \"],[11,\"ul\",[]],[15,\"class\",\"nav navbar-nav navbar-right\"],[13],[0,\"\\n        \"],[11,\"li\",[]],[13],[0,\"\\n          \"],[6,[\"link-to\"],[\"settings\"],null,{\"statements\":[[6,[\"paper-button\"],null,[[\"class\"],[\"settings-button\"]],{\"statements\":[[0,\"Settings\"],[1,[33,[\"paper-icon\"],[\"keyboard_arrow_right\"],null],false],[0,\"\\n\"],[6,[\"paper-tooltip\"],[[28,[\"zIndex\"]]],null,{\"statements\":[[0,\"          Make more changes!\\n\"]],\"locals\":[]},null],[0,\"          \"]],\"locals\":[]},null]],\"locals\":[]},null],[0,\"\\n        \"],[14],[0,\"\\n      \"],[14],[0,\"\\n  \"],[14],[4,\" /.container-fluid \"],[0,\"\\n\"],[14],[0,\"\\n\\n\\n\"],[11,\"div\",[]],[15,\"class\",\"container-fluid container-card\"],[13],[0,\"\\n  \"],[11,\"div\",[]],[15,\"class\",\"card-placeholder col-xs-3 \"],[13],[0,\"\\n      \"],[11,\"div\",[]],[15,\"class\",\"card-block\"],[13],[0,\"\\n        \"],[11,\"h2\",[]],[15,\"class\",\"card-header\"],[13],[0,\"Todo\"],[14],[0,\"\\n        \"],[11,\"div\",[]],[15,\"class\",\"scrollbar1\"],[13],[0,\"\\n\"],[6,[\"each\"],[[28,[\"todoTasks\"]]],null,{\"statements\":[[6,[\"draggable-object\"],null,[[\"content\"],[[28,[\"task\"]]]],{\"statements\":[[6,[\"paper-item\"],null,[[\"class\"],[\"lg-4-line\"]],{\"statements\":[[0,\"            \"],[11,\"div\",[]],[15,\"class\",\"sm-list-item-text\"],[13],[0,\"\\n              \"],[11,\"h4\",[]],[13],[11,\"strong\",[]],[13],[1,[28,[\"task\",\"id\"]],false],[0,\"-\"],[1,[28,[\"task\",\"description\"]],false],[14],[14],[0,\"\\n              \"],[11,\"p\",[]],[13],[0,\"Type: \"],[1,[28,[\"task\",\"tasktype\",\"name\"]],false],[14],[0,\"\\n              \"],[11,\"h5\",[]],[13],[0,\"Assigned to: \"],[1,[28,[\"task\",\"user\",\"name\"]],false],[14],[0,\"\\n\\n            \"],[14],[0,\"\\n            \"],[1,[26,[\"paper-divider\"]],false],[0,\"\\n\"]],\"locals\":[]},null]],\"locals\":[]},null]],\"locals\":[\"task\"]},null],[0,\"\\n\"],[6,[\"paper-button\"],null,[[\"class\",\"onClick\",\"iconButton\",\"raised\"],[\"add-button\",[33,[\"action\"],[[28,[null]],\"toggleModal\"],null],true,true]],{\"statements\":[[0,\"        \"],[1,[33,[\"paper-icon\"],[\"add\"],null],false],[0,\"\\n\"],[6,[\"paper-tooltip\"],[[28,[\"zIndex\"]]],null,{\"statements\":[[0,\"        Add task\\n\"]],\"locals\":[]},null]],\"locals\":[]},null],[0,\"    \"],[14],[0,\"\\n  \"],[14],[0,\"\\n\\n  \"],[14],[0,\"\\n\\n\\n\\n  \"],[11,\"div\",[]],[15,\"class\",\"card-placeholder col-xs-3 col-xs-offset-1\"],[13],[0,\"\\n    \"],[11,\"div\",[]],[15,\"class\",\"card-block\"],[13],[0,\"\\n      \"],[11,\"h2\",[]],[15,\"class\",\"card-header\"],[13],[0,\"In progress\"],[14],[0,\"\\n      \"],[11,\"div\",[]],[15,\"class\",\"scrollbar1\"],[13],[0,\"\\n\"],[6,[\"draggable-object-target\"],null,[[\"action\",\"status\"],[\"updateStatus\",\"progress\"]],{\"statements\":[[6,[\"each\"],[[28,[\"progressTasks\"]]],null,{\"statements\":[[6,[\"draggable-object\"],null,[[\"content\"],[[28,[\"task\"]]]],{\"statements\":[[6,[\"paper-item\"],null,[[\"class\"],[\"lg-4-line\"]],{\"statements\":[[0,\"          \"],[11,\"div\",[]],[15,\"class\",\"sm-list-item-text\"],[13],[0,\"\\n            \"],[11,\"h4\",[]],[13],[11,\"strong\",[]],[13],[1,[28,[\"task\",\"id\"]],false],[0,\"-\"],[1,[28,[\"task\",\"description\"]],false],[14],[14],[0,\"\\n            \"],[11,\"p\",[]],[13],[0,\"Type: \"],[1,[28,[\"task\",\"tasktype\",\"name\"]],false],[14],[0,\"\\n            \"],[11,\"h5\",[]],[13],[0,\"Assigned to: \"],[1,[28,[\"task\",\"user\",\"name\"]],false],[14],[0,\"\\n          \"],[14],[0,\"\\n          \"],[1,[26,[\"paper-divider\"]],false],[0,\"\\n\"]],\"locals\":[]},null]],\"locals\":[]},null]],\"locals\":[\"task\"]},null]],\"locals\":[]},null],[0,\"    \"],[14],[0,\"\\n    \"],[14],[0,\"\\n  \"],[14],[0,\"\\n\\n\\n\\n  \"],[11,\"div\",[]],[15,\"class\",\"card-placeholder col-xs-3 col-xs-offset-1\"],[13],[0,\"\\n    \"],[11,\"div\",[]],[15,\"class\",\"card-block\"],[13],[0,\"\\n      \"],[11,\"h2\",[]],[15,\"class\",\"card-header\"],[13],[0,\"Done\"],[14],[0,\"\\n      \"],[11,\"div\",[]],[15,\"class\",\"scrollbar1\"],[13],[0,\"\\n\"],[6,[\"draggable-object-target\"],null,[[\"action\",\"status\"],[\"updateStatus\",\"done\"]],{\"statements\":[[6,[\"each\"],[[28,[\"doneTasks\"]]],null,{\"statements\":[[6,[\"paper-item\"],null,[[\"class\"],[\"lg-4-line\"]],{\"statements\":[[0,\"          \"],[11,\"div\",[]],[15,\"class\",\"sm-list-item-text\"],[13],[0,\"\\n            \"],[11,\"h4\",[]],[13],[11,\"strong\",[]],[13],[1,[28,[\"task\",\"id\"]],false],[0,\"-\"],[1,[28,[\"task\",\"description\"]],false],[14],[14],[0,\"\\n            \"],[11,\"p\",[]],[13],[0,\"Type: \"],[1,[28,[\"task\",\"tasktype\",\"name\"]],false],[14],[0,\"\\n            \"],[11,\"h5\",[]],[13],[0,\"Assigned to: \"],[1,[28,[\"task\",\"user\",\"name\"]],false],[14],[0,\"\\n          \"],[14],[0,\"\\n          \"],[1,[26,[\"paper-divider\"]],false],[0,\"\\n\"]],\"locals\":[]},null]],\"locals\":[\"task\"]},null]],\"locals\":[]},null],[0,\"    \"],[14],[0,\"\\n    \"],[14],[0,\"\\n  \"],[14],[0,\"\\n\"],[14],[0,\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"hasPartials\":false}", "meta": { "moduleName": "todo-front/templates/home.hbs" } });
 });
 define("todo-front/templates/index", ["exports"], function (exports) {
   "use strict";
@@ -3506,7 +4389,7 @@ define("todo-front/templates/settings", ["exports"], function (exports) {
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
-  exports.default = Ember.HTMLBars.template({ "id": "1JXsE/Dc", "block": "{\"statements\":[[1,[26,[\"outlet\"]],false],[0,\"\\n\\n\"],[11,\"nav\",[]],[15,\"class\",\"navbar navbar-default\"],[13],[0,\"\\n  \"],[11,\"div\",[]],[15,\"class\",\"container-fluid\"],[13],[0,\"\\n    \"],[4,\" Brand and toggle get grouped for better mobile display \"],[0,\"\\n    \"],[11,\"div\",[]],[15,\"class\",\"navbar-header\"],[13],[0,\"\\n\\n    \"],[14],[0,\"\\n\\n    \"],[4,\" Collect the nav links, forms, and other content for toggling \"],[0,\"\\n    \"],[11,\"div\",[]],[15,\"class\",\"collapse navbar-collapse\"],[15,\"id\",\"bs-example-navbar-collapse-1\"],[13],[0,\"\\n      \"],[11,\"ul\",[]],[15,\"class\",\"nav navbar-nav navbar-right\"],[13],[0,\"\\n        \"],[11,\"li\",[]],[13],[0,\"\\n          \"],[6,[\"paper-button\"],null,[[\"class\",\"onClick\"],[\"settings-button\",[33,[\"action\"],[[28,[null]],\"addTask\",[28,[\"taskDescription\"]],[28,[\"selectedUser\",\"id\"]],[28,[\"selectedTaskType\",\"id\"]]],null]]],{\"statements\":[[0,\"Settings \"],[11,\"span\",[]],[15,\"class\",\"arrow_box\"],[15,\"aria-hidden\",\"true\"],[13],[14],[0,\"\\n\"],[6,[\"paper-tooltip\"],[[28,[\"zIndex\"]]],null,{\"statements\":[[0,\"          Make more changes!\\n\"]],\"locals\":[]},null]],\"locals\":[]},null],[0,\"        \"],[14],[0,\"\\n      \"],[14],[0,\"\\n    \"],[14],[4,\" /.navbar-collapse \"],[0,\"\\n  \"],[14],[4,\" /.container-fluid \"],[0,\"\\n\"],[14],[0,\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"hasPartials\":false}", "meta": { "moduleName": "todo-front/templates/settings.hbs" } });
+  exports.default = Ember.HTMLBars.template({ "id": "2YJ+VP2s", "block": "{\"statements\":[[0,\"\\n\"],[11,\"nav\",[]],[15,\"class\",\"navbar navbar-default\"],[13],[0,\"\\n  \"],[11,\"div\",[]],[15,\"class\",\"container-fluid\"],[13],[0,\"\\n    \"],[4,\" Brand and toggle get grouped for better mobile display \"],[0,\"\\n    \"],[11,\"div\",[]],[15,\"class\",\"navbar-header navbar-right \"],[13],[0,\"\\n      \"],[11,\"h2\",[]],[13],[0,\"SETTINGS\"],[14],[0,\"\\n    \"],[14],[0,\"\\n\\n\\n    \"],[11,\"div\",[]],[15,\"class\",\"collapse navbar-collapse\"],[15,\"id\",\"bs-example-navbar-collapse-1\"],[13],[0,\"\\n      \"],[11,\"ul\",[]],[15,\"class\",\"nav navbar-nav navbar-left\"],[13],[0,\"\\n        \"],[11,\"li\",[]],[13],[0,\"\\n          \"],[6,[\"link-to\"],[\"home\"],null,{\"statements\":[[6,[\"paper-button\"],null,[[\"class\"],[\"settings-button\"]],{\"statements\":[[1,[33,[\"paper-icon\"],[\"keyboard_arrow_left\"],null],false],[0,\"Back\\n\"],[6,[\"paper-tooltip\"],[[28,[\"zIndex\"]]],null,{\"statements\":[[0,\"          Make more changes!\\n\"]],\"locals\":[]},null],[0,\"          \"]],\"locals\":[]},null]],\"locals\":[]},null],[0,\"\\n        \"],[14],[0,\"\\n      \"],[14],[0,\"\\n    \"],[14],[4,\" /.navbar-collapse \"],[0,\"\\n  \"],[14],[4,\" /.container-fluid \"],[0,\"\\n\"],[14],[0,\"\\n\\n\"],[11,\"div\",[]],[15,\"class\",\"blocks\"],[13],[0,\"\\n\"],[11,\"div\",[]],[15,\"class\",\"card-placeholder col-xs-3 col-xs-offset-1\"],[13],[0,\"\\n  \"],[11,\"div\",[]],[15,\"class\",\"card-block\"],[13],[0,\"\\n\\n    \"],[11,\"h2\",[]],[15,\"class\",\"card-header\"],[13],[0,\"Users\"],[14],[0,\"\\n\"],[6,[\"paper-list\"],null,null,{\"statements\":[[0,\"    \"],[11,\"div\",[]],[15,\"class\",\"scrollbar2\"],[13],[0,\"\\n\"],[6,[\"each\"],[[28,[\"users\"]]],null,{\"statements\":[[6,[\"paper-item\"],null,[[\"class\"],[\"item-background\"]],{\"statements\":[[0,\"                    \"],[11,\"h3\",[]],[13],[1,[28,[\"user\",\"id\"]],false],[0,\"-\"],[1,[28,[\"user\",\"name\"]],false],[14],[0,\"\\n                      \"],[11,\"span\",[]],[15,\"class\",\"flex\"],[13],[14],[0,\"\\n                      \"],[6,[\"paper-button\"],null,[[\"onClick\"],[[33,[\"action\"],[[28,[null]],\"deleteuser\",[28,[\"user\",\"id\"]]],null]]],{\"statements\":[[1,[33,[\"paper-icon\"],[\"delete\"],[[\"size\"],[24]]],false]],\"locals\":[]},null],[0,\"\\n\"]],\"locals\":[]},null],[0,\"\\n\"]],\"locals\":[\"user\"]},null],[0,\"          \"],[14],[0,\"\\n\"],[11,\"div\",[]],[15,\"class\",\"add-user-tasktype\"],[13],[0,\"\\n\"],[6,[\"paper-input\"],null,[[\"label\",\"value\",\"onChange\"],[\"Add new user\",[28,[\"userName\"]],[33,[\"action\"],[[28,[null]],[33,[\"mut\"],[[28,[\"userName\"]]],null]],null]]],{\"statements\":[],\"locals\":[]},null],[0,\"\\n\"],[6,[\"paper-button\"],null,[[\"onClick\"],[[33,[\"action\"],[[28,[null]],\"addUser\",[28,[\"userName\"]]],null]]],{\"statements\":[[1,[33,[\"paper-icon\"],[\"add\"],[[\"size\"],[24]]],false]],\"locals\":[]},null],[0,\"\\n\"],[14],[0,\"\\n\"]],\"locals\":[]},null],[0,\"\\n  \"],[14],[0,\"\\n\"],[14],[0,\"\\n\\n\\n\"],[11,\"div\",[]],[15,\"class\",\"card-placeholder col-xs-3 col-xs-offset-1\"],[13],[0,\"\\n  \"],[11,\"div\",[]],[15,\"class\",\"card-block\"],[13],[0,\"\\n    \"],[11,\"h2\",[]],[15,\"class\",\"card-header\"],[13],[0,\"Task Types\"],[14],[0,\"\\n\"],[6,[\"paper-list\"],null,null,{\"statements\":[[0,\"        \"],[11,\"div\",[]],[15,\"class\",\"scrollbar2\"],[13],[0,\"\\n\"],[6,[\"each\"],[[28,[\"tasktypes\"]]],null,{\"statements\":[[6,[\"paper-item\"],null,[[\"class\"],[\"item-background\"]],{\"statements\":[[0,\"                    \"],[11,\"h3\",[]],[13],[1,[28,[\"tasktype\",\"id\"]],false],[0,\"-\"],[1,[28,[\"tasktype\",\"name\"]],false],[14],[0,\"\\n                      \"],[11,\"span\",[]],[15,\"class\",\"flex\"],[13],[14],[0,\"\\n                      \"],[6,[\"paper-button\"],null,[[\"onClick\"],[[33,[\"action\"],[[28,[null]],\"deletetasktype\",[28,[\"tasktype\",\"id\"]]],null]]],{\"statements\":[[1,[33,[\"paper-icon\"],[\"delete\"],[[\"size\"],[24]]],false]],\"locals\":[]},null],[0,\"\\n\"]],\"locals\":[]},null]],\"locals\":[\"tasktype\"]},null],[0,\"          \"],[14],[0,\"\\n            \"],[11,\"div\",[]],[15,\"class\",\"add-user-tasktype\"],[13],[0,\"\\n            \"],[6,[\"paper-input\"],null,[[\"label\",\"value\",\"onChange\"],[\"Add new tasktype\",[28,[\"taskTypeName\"]],[33,[\"action\"],[[28,[null]],[33,[\"mut\"],[[28,[\"taskTypeName\"]]],null]],null]]],{\"statements\":[],\"locals\":[]},null],[0,\"\\n            \"],[6,[\"paper-button\"],null,[[\"onClick\"],[[33,[\"action\"],[[28,[null]],\"addTaskType\",[28,[\"taskTypeName\"]]],null]]],{\"statements\":[[1,[33,[\"paper-icon\"],[\"add\"],[[\"size\"],[24]]],false]],\"locals\":[]},null],[0,\"\\n            \"],[14],[0,\"\\n\"]],\"locals\":[]},null],[0,\"  \"],[14],[0,\"\\n\"],[14],[0,\"\\n\"],[14],[0,\"\\n\\n\"],[1,[26,[\"outlet\"]],false],[0,\"\\n\"]],\"locals\":[],\"named\":[],\"yields\":[],\"hasPartials\":false}", "meta": { "moduleName": "todo-front/templates/settings.hbs" } });
 });
 define('todo-front/utils/clamp', ['exports', 'ember-paper/utils/clamp'], function (exports, _clamp) {
   'use strict';
@@ -3543,6 +4426,6 @@ catch(err) {
 });
 
 if (!runningTests) {
-  require("todo-front/app")["default"].create({"name":"todo-front","version":"0.0.0+13c7a541"});
+  require("todo-front/app")["default"].create({"name":"todo-front","version":"0.0.0+24fee9a0"});
 }
 //# sourceMappingURL=todo-front.map

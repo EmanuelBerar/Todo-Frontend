@@ -19709,6 +19709,38 @@ md-toolbar.md-warn > md-tabs.md-default-theme > md-tabs-wrapper, md-toolbar.md-w
 .center-list {
   padding: 150px 0px 150px 0px; }
 
+.navbar-header {
+  padding: 0px;
+  text-align: center; }
+
+.container {
+  border-style: solid; }
+
+.add-user-tasktype {
+  padding-left: 18%; }
+
+.md-2-line {
+  background-color: #eceff1; }
+
+.item-background {
+  background-color: #eceff1; }
+
+.blocks {
+  margin-left: 18%;
+  margin-top: 5%; }
+
+.name {
+  height: 40px;
+  background-color: #eceff1; }
+
+.scrollbar2 {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 360px; }
+
+.username {
+  padding-top: 20px; }
+
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
  * Copyright 2011-2016 Twitter, Inc.
@@ -25537,8 +25569,8 @@ button.close {
 
 .add-button {
   position: fixed;
-  bottom: 38%;
-  right: 66%; }
+  bottom: 30%;
+  right: 65%; }
 
 .card-placeholder {
   display: -webkit-box;
@@ -25548,11 +25580,14 @@ button.close {
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   -webkit-transition: 0.3s;
   transition: 0.3s;
-  height: 500px;
-  overflow-y: scroll;
+  height: 550px;
   border-radius: 15px;
   background-color: #b0bec5;
   padding-left: 0; }
+
+.scrollbar1 {
+  overflow-y: scroll;
+  height: 390px; }
 
 .col-xs-3 {
   width: 26% !important; }

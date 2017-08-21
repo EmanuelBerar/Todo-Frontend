@@ -1,23 +1,72 @@
-{{outlet}}
 
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-
+    <div class="navbar-header navbar-right ">
+      <h2>SETTINGS</h2>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
+
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-left">
         <li>
-          {{#paper-button class="settings-button" onClick=(action "addTask" taskDescription selectedUser.id selectedTaskType.id)}}Settings <span class="arrow_box" aria-hidden="true"></span>
+          {{#link-to 'home'}}{{#paper-button class="settings-button" }}{{paper-icon "keyboard_arrow_left"}}Back
           {{#paper-tooltip zIndex}}
           Make more changes!
           {{/paper-tooltip}}
-          {{/paper-button}}
+          {{/paper-button}}{{/link-to}}
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
+
+<div class="blocks">
+<div class="card-placeholder col-xs-3 col-xs-offset-1">
+  <div class="card-block">
+
+    <h2 class="card-header">Users</h2>
+    {{#paper-list}}
+    <div class="scrollbar2">
+{{#each users as |user|}}
+                {{#paper-item class="item-background"}}
+                    <h3>{{user.id}}-{{user.name}}</h3>
+                      <span class="flex"></span>
+                      {{#paper-button onClick=(action 'deleteuser' user.id)}}{{paper-icon "delete" size=24}}{{/paper-button}}
+                {{/paper-item}}
+
+            {{/each}}
+          </div>
+<div class="add-user-tasktype">
+{{#paper-input label="Add new user" value=userName onChange=(action (mut userName))}}{{/paper-input}}
+{{#paper-button onClick=(action "addUser" userName)}}{{paper-icon "add" size=24}}{{/paper-button}}
+</div>
+{{/paper-list}}
+
+  </div>
+</div>
+
+
+<div class="card-placeholder col-xs-3 col-xs-offset-1">
+  <div class="card-block">
+    <h2 class="card-header">Task Types</h2>
+    {{#paper-list}}
+        <div class="scrollbar2">
+{{#each tasktypes as |tasktype|}}
+                {{#paper-item class="item-background"}}
+                    <h3>{{tasktype.id}}-{{tasktype.name}}</h3>
+                      <span class="flex"></span>
+                      {{#paper-button onClick=(action 'deletetasktype' tasktype.id)}}{{paper-icon "delete" size=24}}{{/paper-button}}
+                {{/paper-item}}
+            {{/each}}
+          </div>
+            <div class="add-user-tasktype">
+            {{#paper-input label="Add new tasktype" value=taskTypeName onChange=(action (mut taskTypeName))}}{{/paper-input}}
+            {{#paper-button onClick=(action "addTaskType" taskTypeName)}}{{paper-icon "add" size=24}}{{/paper-button}}
+            </div>
+{{/paper-list}}
+  </div>
+</div>
+</div>
+
+{{outlet}}

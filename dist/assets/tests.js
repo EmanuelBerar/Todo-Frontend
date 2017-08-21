@@ -15,6 +15,11 @@ define('todo-front/tests/app.lint-test', [], function () {
     assert.ok(false, 'controllers/home.js should pass ESLint\n\n46:11 - \'store\' is assigned a value but never used. (no-unused-vars)');
   });
 
+  QUnit.test('controllers/settings.js', function (assert) {
+    assert.expect(1);
+    assert.ok(true, 'controllers/settings.js should pass ESLint\n\n');
+  });
+
   QUnit.test('models/task.js', function (assert) {
     assert.expect(1);
     assert.ok(true, 'models/task.js should pass ESLint\n\n');

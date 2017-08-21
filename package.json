@@ -26,6 +26,7 @@
     "ember-cli-htmlbars": "^2.0.1",
     "ember-cli-htmlbars-inline-precompile": "^0.4.3",
     "ember-cli-inject-live-reload": "^1.4.1",
+    "ember-cli-materialize": "^0.22.0-beta.0",
     "ember-cli-qunit": "^4.0.0",
     "ember-cli-sass": "^7.0.0",
     "ember-cli-shims": "^1.1.0",
@@ -49,6 +50,7 @@
   "private": true,
   "dependencies": {
     "bower": "^1.8.0",
-    "ember-bootstrap": "^1.0.0-rc.1"
+    "ember-bootstrap": "^1.0.0-rc.1",
+    "material-design-icons": "^3.0.1"
   }
 }

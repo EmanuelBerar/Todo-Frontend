@@ -1,69 +1,3 @@
-<!--
-<div class="layout-row layout-align-center center-list">
-  {{#paper-card as |card|}}
-      <div class="layout-row layout-align-center-center">
-        <h2>Todo</h2>
-        {{#paper-button onClick=(action "toggleModal") iconButton=true}}{{paper-icon "add" size=24}}{{/paper-button}}
-      </div>
-      <div class="card-size scrollable">
-        {{#paper-list}}
-            {{#each todoTasks as |task|}}
-              {{#paper-item class="md-3-line"}}
-                <div class="md-list-item-text">
-                  <h3>{{task.id}}-{{task.description }}</h3>
-                  <p>Type: {{task.tasktype.name }}</p>
-                  <h4>Assigned to: {{task.user.name }}</h4>
-                </div>
-                {{paper-divider}}
-              {{/paper-item}}
-            {{/each}}
-        {{/paper-list}}
-    </div>
-  {{/paper-card}}
-
-  {{#paper-card as |card|}}
-      <div class="layout-row layout-align-center-center">
-        <h2>Progress</h2>
-        {{#paper-button onClick=(action "updateTask") iconButton=true}}{{paper-icon "update" size=24}}{{/paper-button}}
-
-      </div>
-    <div class="card-size scrollable">
-      {{#paper-list}}
-          {{#each progressTasks as |task|}}
-            {{#paper-item class="md-3-line"}}
-              <div class="md-list-item-text">
-                <h3>{{task.id}}-{{task.description }}</h3>
-                <p>Type: {{task.tasktype.name }}</p>
-                <h4>Assigned to: {{task.user.name }}</h4>
-              </div>
-              {{paper-divider}}
-            {{/paper-item}}
-          {{/each}}
-      {{/paper-list}}
-    </div>
-  {{/paper-card}}
-
-  {{#paper-card as |card|}}
-      <div class="layout-row layout-align-center-center">
-        <h2>Done</h2>
-      </div>
-      <div class="card-size scrollable">
-        {{#paper-list}}
-            {{#each doneTasks as |task|}}
-              {{#paper-item class="md-3-line"}}
-                <div class="md-list-item-text">
-                  <h3>{{task.id}}-{{task.description }}</h3>
-                  <p>Type: {{task.tasktype.name }}</p>
-                  <h4>Assigned to: {{task.user.name }}</h4>
-                </div>
-                {{paper-divider}}
-              {{/paper-item}}
-            {{/each}}
-        {{/paper-list}}
-      </div>
-  {{/paper-card}}
-</div> -->
-
 <!-- ####################################################################################################################################################################################################### -->
   {{#if isShowingModal}}
       <div class="layout-row layout-align-center">
@@ -118,23 +52,18 @@
 
 <nav class="navbar navbar-default">
   <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-
+    <div class="navbar-header navbar-left ">
+      <h2>MY AWESOME APP</h2>
     </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
+        <ul class="nav navbar-nav navbar-right">
         <li>
-          {{#paper-button class="settings-button" onClick=(action "addTask" taskDescription selectedUser.id selectedTaskType.id)}}Settings <span class="arrow_box" aria-hidden="true"></span>
+          {{#link-to 'settings'}}{{#paper-button  class="settings-button"}}Settings{{paper-icon "keyboard_arrow_right"}}
           {{#paper-tooltip zIndex}}
           Make more changes!
           {{/paper-tooltip}}
-          {{/paper-button}}
+          {{/paper-button}}{{/link-to}}
         </li>
       </ul>
-    </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
 
@@ -143,6 +72,7 @@
   <div class="card-placeholder col-xs-3 ">
       <div class="card-block">
         <h2 class="card-header">Todo</h2>
+        <div class="scrollbar1">
         {{#each todoTasks as |task|}}
         {{#draggable-object content=task}}
           {{#paper-item class="lg-4-line"}}
@@ -150,6 +80,7 @@
               <h4><strong>{{task.id}}-{{task.description }}</strong></h4>
               <p>Type: {{task.tasktype.name }}</p>
               <h5>Assigned to: {{task.user.name }}</h5>
+
             </div>
             {{paper-divider}}
           {{/paper-item}}
@@ -162,6 +93,7 @@
         Add task
         {{/paper-tooltip}}
       {{/paper-button}}
+    </div>
   </div>
 
   </div>
@@ -171,6 +103,7 @@
   <div class="card-placeholder col-xs-3 col-xs-offset-1">
     <div class="card-block">
       <h2 class="card-header">In progress</h2>
+      <div class="scrollbar1">
       {{#draggable-object-target action="updateStatus" status="progress"}}
       {{#each progressTasks as |task|}}
       {{#draggable-object content=task}}
@@ -186,6 +119,7 @@
       {{/each}}
       {{/draggable-object-target}}
     </div>
+    </div>
   </div>
 
 
@@ -193,6 +127,7 @@
   <div class="card-placeholder col-xs-3 col-xs-offset-1">
     <div class="card-block">
       <h2 class="card-header">Done</h2>
+      <div class="scrollbar1">
       {{#draggable-object-target action="updateStatus" status="done"}}
       {{#each doneTasks as |task|}}
         {{#paper-item class="lg-4-line"}}
@@ -206,24 +141,6 @@
       {{/each}}
       {{/draggable-object-target}}
     </div>
+    </div>
   </div>
 </div>
-
-
-
-
-<!-- <div class="container settings-board">
-  {{#paper-list}}
-  {{#paper-subheader}}<strong>Users</strong>{{/paper-subheader}}
-  {{#each users as |user|}}
-    {{#paper-item class="md-3-line"}}
-      <div class="md-list-item-text">
-        <h3>{{user.name}}</h3>
-      </div>
-    {{/paper-item}}
-    {{/each}}
-  {{/paper-list}}
-
-
-
-</div> -->
