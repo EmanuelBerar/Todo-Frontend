@@ -71,7 +71,7 @@
 <div class="container-fluid container-card">
   <div class="card-placeholder col-xs-3 ">
       <div class="card-block">
-        <h2 class="card-header">Todo</h2>
+        <h2 class="card-header">Todo [{{todoTasks.length}}]</h2>
         <div class="scrollbar1">
         {{#each todoTasks as |task|}}
         {{#draggable-object content=task}}
@@ -102,7 +102,7 @@
 
   <div class="card-placeholder col-xs-3 col-xs-offset-1">
     <div class="card-block">
-      <h2 class="card-header">In progress</h2>
+      <h2 class="card-header">In progress [{{todoTasks.length}}]</h2>
       <div class="scrollbar1">
       {{#draggable-object-target action="updateStatus" status="progress"}}
       {{#each progressTasks as |task|}}
@@ -126,7 +126,7 @@
 
   <div class="card-placeholder col-xs-3 col-xs-offset-1">
     <div class="card-block">
-      <h2 class="card-header">Done</h2>
+      <h2 class="card-header">Done [{{todoTasks.length}}]</h2>
       <div class="scrollbar1">
       {{#draggable-object-target action="updateStatus" status="done"}}
       {{#each doneTasks as |task|}}
