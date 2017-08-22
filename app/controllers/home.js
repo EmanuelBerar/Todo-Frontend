@@ -13,6 +13,7 @@ export default Ember.Controller.extend({
   }),
 
   todoTasks: Ember.computed('tasks.length','tasks.@each.status', function() {
+
     return this.get('tasks').filterBy('status','todo')
   }),
   progressTasks: Ember.computed('tasks.length','tasks.@each.status', function() {
@@ -34,7 +35,7 @@ export default Ember.Controller.extend({
   isShowingModal: false,
 
   actions: {
-
+  
     deleteTask(taskid) {
         let store = this.get('store');
         store.findRecord('task', taskid, { backgroundReload: false }).then(function(task) {

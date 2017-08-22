@@ -12,10 +12,9 @@
 }
 
 .container-card {
-  flex: 1; /* additionally, equal width */
-  // background-color: rgb(176, 190, 197);
-  // border-radius: 15px;
-  margin-left: 15%;
+  flex: 1;
+  margin: 7%;
+  margin-left: 7%;
   margin-right: 10%;
 
 
@@ -27,13 +26,11 @@
 }
 
 .card-block {
-  // position: fixed!important;
   border-radius: 15px;
 
 }
 
 .card {
-    /* Add shadows to create the "card" effect */
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
 
@@ -41,22 +38,22 @@
 
 .settings-button {
   background-color: #f44336;
+  color: rgb(236, 239, 241);
 }
 
 .add-button {
-  position: fixed;
-  bottom: 30%;
-  right: 65%;
+  position: relative;
+  background: white;
 }
 
+
+
 .card-placeholder {
-    display: flex;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    height:550px;
-    border-radius: 15px;
-    background-color: rgb(176, 190, 197);
-    padding-left: 0;
+  padding-left: 0;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 15px;
+
+  background-color: rgb(176, 190, 197);
 }
 
 .scrollbar1 {
@@ -65,15 +62,17 @@
 }
 
 .col-xs-3 {
-  width: 26% !important;
+  width: 25% !important;
+  padding-left: 0%;
 }
 
 .navbar {
     background-color: rgb(84, 110, 122);
+    color: rgb(236, 239, 241);
 }
 
 .sm-list-item-text {
-  height: 150px;
+  height: 135px;
 
 }
 
@@ -82,10 +81,15 @@
 
 }
 
+.delete-todo {
+  float: right;
+}
+
 md-list-item, md-list-item .md-list-item-inner {
   border-radius: 10px!important;
-  margin-bottom: 10%!important;
-  margin-left: 12%;
+  margin-bottom: 9%!important;
+  margin-left: 10%;
+  margin-right: 5%;
 
 }
 
@@ -94,21 +98,18 @@ md-list-item, md-list-item .md-list-item-inner {
     width: auto;
     margin-top: 0;
     margin-bottom: 10%;
-    width: 116%;
+    width: 104%;
     border-top-right-radius: 5px;
     text-align: center;
     padding-top: 5%;
     padding-bottom: 5%;
+    color: rgb(236, 239, 241);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
 }
 
 
 .container {
     padding: 2px 0px;
 }
-
-
-// .settings-board {
-//   margin-top: 700px;
-//   height: auto;
-//   border-style: solid;
-// }

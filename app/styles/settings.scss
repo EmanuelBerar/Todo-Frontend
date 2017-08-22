@@ -6,7 +6,7 @@
   border-style: solid;
 }
 .add-user-tasktype {
-  padding-left: 18%;
+  padding-left: 15%;
 }
 
 .md-2-line {
@@ -17,7 +17,7 @@
   background-color: rgb(236, 239, 241);
 }
 
-.blocks {
+.block {
   margin-left: 18%;
   margin-top: 5%;
 }
@@ -35,4 +35,27 @@
 
 .username {
   padding-top: 20px;
+}
+
+.card-header-settings {
+  background-color: rgb(84, 110, 122);
+    margin-top: 0;
+    margin-bottom: 10%;
+    width: 115%;
+    border-top-right-radius: 5px;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    color: rgb(236, 239, 241);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+
+}
+
+.card-placeholder-settings {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 15px;
+  background-color: rgb(176, 190, 197);
+  margin-left: 14%!important
 }
