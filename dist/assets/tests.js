@@ -12,7 +12,7 @@ define('todo-front/tests/app.lint-test', [], function () {
 
   QUnit.test('controllers/home.js', function (assert) {
     assert.expect(1);
-    assert.ok(false, 'controllers/home.js should pass ESLint\n\n47:11 - \'store\' is assigned a value but never used. (no-unused-vars)');
+    assert.ok(false, 'controllers/home.js should pass ESLint\n\n50:11 - \'store\' is assigned a value but never used. (no-unused-vars)');
   });
 
   QUnit.test('controllers/settings.js', function (assert) {
@@ -60,7 +60,7 @@ define('todo-front/tests/app.lint-test', [], function () {
     assert.ok(true, 'routes/settings.js should pass ESLint\n\n');
   });
 });
-define('todo-front/tests/helpers/data-transfer', ['exports', 'ember'], function (exports, _ember) {
+define('todo-front/tests/helpers/data-transfer', ['exports'], function (exports) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -68,7 +68,7 @@ define('todo-front/tests/helpers/data-transfer', ['exports', 'ember'], function 
   });
 
 
-  var c = _ember.default.Object.extend({
+  var c = Ember.Object.extend({
     getData: function getData() {
       return this.get('payload');
     },
@@ -110,7 +110,7 @@ define('todo-front/tests/helpers/data-transfer', ['exports', 'ember'], function 
 
   exports.default = c;
 });
-define('todo-front/tests/helpers/destroy-app', ['exports', 'ember'], function (exports, _ember) {
+define('todo-front/tests/helpers/destroy-app', ['exports'], function (exports) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -118,7 +118,7 @@ define('todo-front/tests/helpers/destroy-app', ['exports', 'ember'], function (e
   });
   exports.default = destroyApp;
   function destroyApp(application) {
-    _ember.default.run(application, 'destroy');
+    Ember.run(application, 'destroy');
   }
 });
 define('todo-front/tests/helpers/drag-drop', ['exports', 'ember-native-dom-helpers', 'todo-front/tests/helpers/mock-event'], function (exports, _emberNativeDomHelpers, _mockEvent) {
@@ -197,7 +197,7 @@ define('todo-front/tests/helpers/drag-drop', ['exports', 'ember-native-dom-helpe
   }
 
   var dragOver = function () {
-    var _ref = _asyncToGenerator(regeneratorRuntime.mark(function _callee2(dropSelector, moves) {
+    var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee2(dropSelector, moves) {
       var _this = this;
 
       return regeneratorRuntime.wrap(function _callee2$(_context2) {
@@ -206,7 +206,7 @@ define('todo-front/tests/helpers/drag-drop', ['exports', 'ember-native-dom-helpe
             case 0:
               moves = moves || [[{ clientX: 1, clientY: 1 }, dropSelector]];
               return _context2.abrupt('return', moves.forEach(function () {
-                var _ref3 = _asyncToGenerator(regeneratorRuntime.mark(function _callee(_ref2) {
+                var _ref3 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee(_ref2) {
                   var _ref4 = _slicedToArray(_ref2, 2),
                       position = _ref4[0],
                       selector = _ref4[1];
@@ -247,7 +247,7 @@ define('todo-front/tests/helpers/drag-drop', ['exports', 'ember-native-dom-helpe
   }();
 
   var drop = function () {
-    var _ref5 = _asyncToGenerator(regeneratorRuntime.mark(function _callee3(dragHandle, dragEvent, options) {
+    var _ref5 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee3(dragHandle, dragEvent, options) {
       var dropSelector, location, dragOverMoves, dropElement, event;
       return regeneratorRuntime.wrap(function _callee3$(_context3) {
         while (1) {
@@ -306,7 +306,7 @@ define('todo-front/tests/helpers/drag-drop', ['exports', 'ember-native-dom-helpe
   }();
 
   var drag = exports.drag = function () {
-    var _ref6 = _asyncToGenerator(regeneratorRuntime.mark(function _callee4(cssPath) {
+    var _ref6 = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee4(cssPath) {
       var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
       var dragEvent;
       return regeneratorRuntime.wrap(function _callee4$(_context4) {
@@ -386,14 +386,14 @@ define('todo-front/tests/helpers/ember-basic-dropdown', ['exports', 'ember-basic
   exports.default = _helpers.default;
   var nativeClick = exports.nativeClick = _emberNativeDomHelpers.click;
 });
-define('todo-front/tests/helpers/ember-drag-drop', ['exports', 'ember', 'todo-front/tests/helpers/data-transfer'], function (exports, _ember, _dataTransfer) {
+define('todo-front/tests/helpers/ember-drag-drop', ['exports', 'todo-front/tests/helpers/data-transfer'], function (exports, _dataTransfer) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
     value: true
   });
   exports.drag = drag;
-  var $ = _ember.default.$;
+  var $ = Ember.$;
 
 
   function drop($dragHandle, dropCssPath, dragEvent) {
@@ -403,15 +403,15 @@ define('todo-front/tests/helpers/ember-drag-drop', ['exports', 'ember', 'todo-fr
       throw 'There are no drop targets by the given selector: \'' + dropCssPath + '\'';
     }
 
-    _ember.default.run(function () {
+    Ember.run(function () {
       triggerEvent($dropTarget, 'dragover', _dataTransfer.default.makeMockEvent());
     });
 
-    _ember.default.run(function () {
+    Ember.run(function () {
       triggerEvent($dropTarget, 'drop', _dataTransfer.default.makeMockEvent(dragEvent.dataTransfer.get('data.payload')));
     });
 
-    _ember.default.run(function () {
+    Ember.run(function () {
       triggerEvent($dragHandle, 'dragend', _dataTransfer.default.makeMockEvent());
     });
   }
@@ -422,11 +422,11 @@ define('todo-front/tests/helpers/ember-drag-drop', ['exports', 'ember', 'todo-fr
     var dragEvent = _dataTransfer.default.makeMockEvent();
     var $dragHandle = $(cssPath);
 
-    _ember.default.run(function () {
+    Ember.run(function () {
       triggerEvent($dragHandle, 'mouseover');
     });
 
-    _ember.default.run(function () {
+    Ember.run(function () {
       triggerEvent($dragHandle, 'dragstart', dragEvent);
     });
 
@@ -611,7 +611,7 @@ define('todo-front/tests/helpers/mock-event', ['exports'], function (exports) {
     return event;
   }
 });
-define('todo-front/tests/helpers/module-for-acceptance', ['exports', 'qunit', 'ember', 'todo-front/tests/helpers/start-app', 'todo-front/tests/helpers/destroy-app'], function (exports, _qunit, _ember, _startApp, _destroyApp) {
+define('todo-front/tests/helpers/module-for-acceptance', ['exports', 'qunit', 'todo-front/tests/helpers/start-app', 'todo-front/tests/helpers/destroy-app'], function (exports, _qunit, _startApp, _destroyApp) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -640,7 +640,7 @@ define('todo-front/tests/helpers/module-for-acceptance', ['exports', 'qunit', 'e
     });
   };
 
-  var resolve = _ember.default.RSVP.resolve;
+  var resolve = Ember.RSVP.resolve;
 });
 define('todo-front/tests/helpers/resolver', ['exports', 'todo-front/resolver', 'todo-front/config/environment'], function (exports, _resolver, _environment) {
   'use strict';
@@ -659,7 +659,7 @@ define('todo-front/tests/helpers/resolver', ['exports', 'todo-front/resolver', '
 
   exports.default = resolver;
 });
-define('todo-front/tests/helpers/start-app', ['exports', 'ember', 'todo-front/app', 'todo-front/config/environment'], function (exports, _ember, _app, _environment) {
+define('todo-front/tests/helpers/start-app', ['exports', 'todo-front/app', 'todo-front/config/environment'], function (exports, _app, _environment) {
   'use strict';
 
   Object.defineProperty(exports, "__esModule", {
@@ -667,10 +667,10 @@ define('todo-front/tests/helpers/start-app', ['exports', 'ember', 'todo-front/ap
   });
   exports.default = startApp;
   function startApp(attrs) {
-    var attributes = _ember.default.merge({}, _environment.default.APP);
-    attributes = _ember.default.merge(attributes, attrs); // use defaults, but you can override;
+    var attributes = Ember.merge({}, _environment.default.APP);
+    attributes = Ember.merge(attributes, attrs); // use defaults, but you can override;
 
-    return _ember.default.run(function () {
+    return Ember.run(function () {
       var application = _app.default.create(attributes);
       application.setupForTesting();
       application.injectTestHelpers();

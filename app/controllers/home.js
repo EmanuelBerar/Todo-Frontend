@@ -6,7 +6,7 @@ import Ember from 'ember';
 
 export default Ember.Controller.extend({
 
-
+selectedTask: null,
 
   tasks: Ember.computed(function() {
     return this.get('store').findAll('task');
@@ -33,9 +33,12 @@ export default Ember.Controller.extend({
   }),
 
   isShowingModal: false,
+  isShowingTodo: false,
+  isShowingProgress: false,
+  isShowingDone: false,
 
   actions: {
-  
+
     deleteTask(taskid) {
         let store = this.get('store');
         store.findRecord('task', taskid, { backgroundReload: false }).then(function(task) {
@@ -59,8 +62,22 @@ export default Ember.Controller.extend({
       this.store.find('task', 19).then(function(record) {
       record.set('status', 'progress');
       record.save();
-});
+    });
 
+    },
+    toggleTodo: function() {
+          this.toggleProperty('isShowingTodo');
+      },
+      toggleProgress: function() {
+          this.toggleProperty('isShowingProgress');
+      },
+      toggleDone: function() {
+          this.toggleProperty('isShowingDone');
+      },
+
+   setSelectedTask(task, isShowingTasks) {
+      this.set('selectedTask', task)
+      this.toggleProperty(isShowingTasks);
     },
 
     toggleModal: function() {
