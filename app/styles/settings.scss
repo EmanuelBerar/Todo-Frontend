@@ -3,29 +3,25 @@
   text-align: center;
 }
 .container {
-  border-style: solid;
-}
-.add-user-tasktype {
-  padding-left: 15%;
+  // border-style: solid;
 }
 
-.md-2-line {
-  background-color: rgb(236, 239, 241);
+.card-size-settings {
+  height: 500px;
 }
+
+.add-user-tasktype {
+  // padding-left: 15%;
+}
+
+
 
 .item-background {
-  background-color: rgb(236, 239, 241);
+  background-color: #FFFFFF;
 }
 
-.block {
-  margin-left: 18%;
-  margin-top: 5%;
-}
- .name {
 
-   height: 40px;
-   background-color: rgb(236, 239, 241);
- }
+
 
  .scrollbar2 {
    overflow-y:scroll;
@@ -34,28 +30,39 @@
  }
 
 .username {
-  padding-top: 20px;
+  // padding-top: 20px;
 }
 
 .card-header-settings {
-  background-color: rgb(84, 110, 122);
-    margin-top: 0;
-    margin-bottom: 10%;
-    width: 115%;
-    border-top-right-radius: 5px;
-    text-align: center;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    color: rgb(236, 239, 241);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+  background: #485563;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #29323c, #485563);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #29323c, #485563); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    // margin-top: 0;
+    // margin-bottom: 10%;
+    // width: 115%;
+    // border-top-right-radius: 5px;
+    // text-align: center;
+    // padding-top: 5%;
+    // padding-bottom: 5%;
+    // color: rgb(236, 239, 241);
+    // border-top-left-radius: 10px;
+    // border-top-right-radius: 10px;
 
 
 }
 
-.card-placeholder-settings {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  border-radius: 15px;
-  background-color: rgb(176, 190, 197);
-  margin-left: 14%!important
+.card-placeholder-settings-users {
+  // box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  // border-radius: 15px;
+  font-family: 'Mukta Mahee', sans-serif;
+  // background-color: #32658b;
+  // margin-left: 14%!important
+}
+.card-placeholder-settings-tasktypes {
+  // box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  // border-radius: 15px;
+  font-family: 'Mukta Mahee', sans-serif;
+
+  // background-color: #3d6b58;
+  // margin-left: 14%!important
 }

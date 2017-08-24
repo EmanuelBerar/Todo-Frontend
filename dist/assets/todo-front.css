@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Mukta+Mahee");
 .md-searchbox {
   -webkit-box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1), 0 0 0 0 rgba(0, 0, 0, 0.14), 0 0 0 0 rgba(0, 0, 0, 0.12);
           box-shadow: 0 1px 0 0 rgba(0, 0, 0, 0.1), 0 0 0 0 rgba(0, 0, 0, 0.14), 0 0 0 0 rgba(0, 0, 0, 0.12);
@@ -19713,53 +19714,30 @@ md-toolbar.md-warn > md-tabs.md-default-theme > md-tabs-wrapper, md-toolbar.md-w
   padding: 0px;
   text-align: center; }
 
-.container {
-  border-style: solid; }
-
-.add-user-tasktype {
-  padding-left: 15%; }
-
-.md-2-line {
-  background-color: #eceff1; }
+.card-size-settings {
+  height: 500px; }
 
 .item-background {
-  background-color: #eceff1; }
-
-.block {
-  margin-left: 18%;
-  margin-top: 5%; }
-
-.name {
-  height: 40px;
-  background-color: #eceff1; }
+  background-color: #FFFFFF; }
 
 .scrollbar2 {
   overflow-y: scroll;
   overflow-x: hidden;
   height: 360px; }
 
-.username {
-  padding-top: 20px; }
-
 .card-header-settings {
-  background-color: #546e7a;
-  margin-top: 0;
-  margin-bottom: 10%;
-  width: 115%;
-  border-top-right-radius: 5px;
-  text-align: center;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  color: #eceff1;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px; }
+  background: #485563;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, right top, left top, from(#29323c), to(#485563));
+  background: linear-gradient(to left, #29323c, #485563);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
 
-.card-placeholder-settings {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 15px;
-  background-color: #b0bec5;
-  margin-left: 14% !important; }
+.card-placeholder-settings-users {
+  font-family: 'Mukta Mahee', sans-serif; }
+
+.card-placeholder-settings-tasktypes {
+  font-family: 'Mukta Mahee', sans-serif; }
 
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -25561,21 +25539,10 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-.header {
-  padding-top: 50px; }
-
 .container-card {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  margin: 7%;
-  margin-left: 7%;
-  margin-right: 10%; }
+  font-family: 'Mukta Mahee', sans-serif; }
   .container-card .lg-4-line {
-    background-color: #eceff1; }
-
-.card-block {
-  border-radius: 15px; }
+    background-color: #FFFFFF; }
 
 .card {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -25584,60 +25551,50 @@ button.close {
   transition: 0.3s; }
 
 .settings-button {
-  background-color: #f44336;
+  background-color: gray;
   color: #eceff1; }
 
 .add-button {
   position: relative;
   background: white; }
 
-.card-placeholder {
-  padding-left: 0;
+.card-placeholder-todo {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 15px;
-  background-color: #b0bec5; }
+  border-radius: 15px; }
+
+.card-placeholder-progress {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 15px; }
+
+.card-placeholder-done {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 15px; }
+
+.card-size-home {
+  width: 300px;
+  height: 350px; }
 
 .scrollbar1 {
-  overflow-y: scroll;
-  height: 390px; }
-
-.col-xs-3 {
-  width: 25% !important;
-  padding-left: 0%; }
+  overflow-y: scroll; }
 
 .navbar {
-  background-color: #546e7a;
-  color: #eceff1; }
-
-.sm-list-item-text {
-  height: 135px; }
-
-.card-block {
-  width: 90%; }
+  background: #485563;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, right top, left top, from(#29323c), to(#485563));
+  background: linear-gradient(to left, #29323c, #485563);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #eceff1;
+  font-family: 'Mukta Mahee', sans-serif; }
 
 .delete-todo {
   float: right; }
 
-md-list-item, md-list-item .md-list-item-inner {
-  border-radius: 10px !important;
-  margin-bottom: 9% !important;
-  margin-left: 10%;
-  margin-right: 5%; }
-
 .card-header {
-  background-color: #546e7a;
-  width: auto;
-  margin-top: 0;
-  margin-bottom: 10%;
-  width: 104%;
-  border-top-right-radius: 5px;
-  text-align: center;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  color: #eceff1;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px; }
-
-.container {
-  padding: 2px 0px; }
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, right top, left top, from(#29323c), to(#485563));
+  background: linear-gradient(to left, #29323c, #485563);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }

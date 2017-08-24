@@ -1,4 +1,4 @@
-<!-- ####################################################################################################################################################################################################### -->
+<!-- CREATE TASK MODAL -->
 {{#if isShowingModal}}
 <div class="layout-row layout-align-center">
   {{#modal-dialog onClose="toggleModal"
@@ -39,21 +39,13 @@
     </div>
     {{/if}}
     <!-- #################################################################################################################################################################################################### -->
-    <!-- <div class="container header">
-    <div >
-    {{#paper-button class="settings-button" onClick=(action "addTask" taskDescription selectedUser.id selectedTaskType.id)}}Settings
-    {{#paper-tooltip zIndex}}
-    Make more changes!
-    {{/paper-tooltip}}
-    {{/paper-button}}
-  </div>
-</div> -->
 
 
+<!-- NAVBAR AND SETTINGS BUTTON -->
 <nav class="navbar navbar-default">
   <div class="container-fluid">
-    <div class="navbar-header navbar-left ">
-      <h2>MY AWESOME APP</h2>
+    <div class="navbar-header">
+
     </div>
     <ul class="nav navbar-nav navbar-right">
       <li>
@@ -68,18 +60,27 @@
 </nav>
 
 
-<div class="container-fluid container-card">
+<div class="layout-row layout-align-center-center">
+<!-- TODO TASKS -->
+  <div class="layout-column">
+    <div class="">
+    {{#paper-card as |card|}}
+    {{#card.title as |title|}}
+      {{#title.text as |text|}}
+        {{#text.headline}}Todo [{{todoTasks.length}}]
+        {{#paper-button class="add-button" onClick=(action 'toggleModal') iconButton=true raised=true}}
+        {{paper-icon "add"}}
+        {{#paper-tooltip zIndex}}
+        Add task
+        {{/paper-tooltip}}
+        {{/paper-button}}
+        {{/text.headline}}
 
-<div class="card-block card-placeholder col-xs-3">
-  <h2 class="card-header">Todo [{{todoTasks.length}}]
-    {{#paper-button class="add-button" onClick=(action 'toggleModal') iconButton=true raised=true}}
-    {{paper-icon "add"}}
-    {{#paper-tooltip zIndex}}
-    Add task
-    {{/paper-tooltip}}
-    {{/paper-button}}
-  </h2>
-  {{#paper-list}}
+      {{/title.text}}
+    {{/card.title}}
+    {{paper-divider}}
+      {{#paper-list}}
+  <div class="scrollbar1">
 
   {{#if isShowingTodo}}
                      {{#modal-dialog onClose="toggleTodo"
@@ -95,11 +96,11 @@
                      {{/modal-dialog}}
                    {{/if}}
 
-    <div class="scrollbar1">
+    <div class="card-size-home">
         {{#each todoTasks as |task|}}
         {{#draggable-object content=task}}
-          {{#paper-item onClick=(action "setSelectedTask" task 'isShowingTodo') class="lg-4-line"}}
-          <div class="sm-list-item-text">
+          {{#paper-item onClick=(action "setSelectedTask" task 'isShowingTodo')}}
+          <div class="">
             <h4> <strong>{{task.id}}-{{task.description }}</strong></h4>
             <p>Type: {{task.tasktype.name }}</p>
             <h5>Assigned to: {{task.user.name }}</h5>
@@ -111,15 +112,27 @@
         {{/each}}
 
     </div>
+  </div>
   {{/paper-list}}
-</div>
+  {{/paper-card}}
+  </div>
+  </div>
 
 
+
+<!-- PROGRESS TASKS -->
+  <div class="layout-column">
 {{#draggable-object-target action="updateStatus" status="progress"}}
-
-  <div class="card-block card-placeholder col-xs-3 col-xs-offset-1">
-    <h2 class="card-header">In progress [{{progressTasks.length}}]</h2>
+  <div class="">
+    {{#paper-card as |card|}}
+    {{#card.title as |title|}}
+       {{#title.text as |text|}}
+        {{#text.headline}}In progress [{{progressTasks.length}}] {{/text.headline}}
+       {{/title.text}}
+    {{/card.title}}
+    {{paper-divider}}
     {{#paper-list}}
+    <div class="scrollbar1">
 
     {{#if isShowingProgress}}
                        {{#modal-dialog onClose="toggleProgress"
@@ -135,12 +148,12 @@
                        {{/modal-dialog}}
                      {{/if}}
 
-      <div class="scrollbar1">
+      <div class="card-size-home">
           {{#each progressTasks as |task|}}
           {{#draggable-object content=task}}
 
-            {{#paper-item onClick=(action 'setSelectedTask' task 'isShowingProgress') class="lg-4-line"}}
-            <div class="sm-list-item-text">
+            {{#paper-item onClick=(action 'setSelectedTask' task 'isShowingProgress')}}
+            <div class="">
               <h4> <strong>{{task.id}}-{{task.description }}</strong></h4>
               <p>Type: {{task.tasktype.name }}</p>
               <h5>Assigned to: {{task.user.name }}</h5>
@@ -152,19 +165,29 @@
 
           {{/each}}
       </div>
+    </div>
     {{/paper-list}}
+     {{/paper-card}}
   </div>
-
   {{/draggable-object-target}}
+</div>
 
 
 
-
+<!-- DONE TASKS -->
+<div class="layout-column">
   {{#draggable-object-target action="updateStatus" status="done"}}
-
-  <div class="card-block card-placeholder col-xs-3 col-xs-offset-1">
-    <h2 class="card-header">Done [{{doneTasks.length}}]</h2>
+  <div class="">
+    {{#paper-card as |card|}}
+    {{#card.title as |title|}}
+       {{#title.text as |text|}}
+        {{#text.headline}}Done [{{doneTasks.length}}] {{/text.headline}}
+       {{/title.text}}
+    {{/card.title}}
+    {{paper-divider}}
     {{#paper-list}}
+    <span class="flex">
+    <div class="scrollbar1">
 
     {{#if isShowingDone}}
                        {{#modal-dialog onClose="toggleDone"
@@ -180,10 +203,10 @@
                        {{/modal-dialog}}
                      {{/if}}
 
-      <div class="scrollbar1">
+      <div class="card-size-home">
           {{#each doneTasks as |task|}}
-            {{#paper-item onClick=(action 'setSelectedTask' task 'isShowingDone') class="lg-4-line"}}
-            <div class="sm-list-item-text">
+            {{#paper-item onClick=(action 'setSelectedTask' task 'isShowingDone') }}
+            <div class="">
               <h4> <strong>{{task.id}}-{{task.description }}{{#paper-button onClick=(action 'deleteTask' task.id) class="delete-todo"}}{{paper-icon "delete" size=24}}{{/paper-button}}</strong></h4>
               <p>Type: {{task.tasktype.name }}</p>
               <h5>Assigned to: {{task.user.name }}</h5>
@@ -194,8 +217,11 @@
             {{/paper-item}}
           {{/each}}
       </div>
+    </div>
+    </span>
     {{/paper-list}}
+     {{/paper-card}}
   </div>
   {{/draggable-object-target}}
-
+</div>
 </div>
