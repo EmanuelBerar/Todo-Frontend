@@ -1,19 +1,13 @@
 import Ember from 'ember';
 
-
-
-
-
-export default Ember.Controller.extend({
+  export default Ember.Controller.extend({
 
 selectedTask: null,
-
   tasks: Ember.computed(function() {
     return this.get('store').findAll('task');
   }),
 
   todoTasks: Ember.computed('tasks.length','tasks.@each.status', function() {
-
     return this.get('tasks').filterBy('status','todo')
   }),
   progressTasks: Ember.computed('tasks.length','tasks.@each.status', function() {
@@ -34,7 +28,7 @@ selectedTask: null,
 
   newTask: Ember.computed(function() {
      return this.store.createRecord('task');
-   }),
+  }),
 
   isShowingModal: false,
   isShowingTodo: false,
@@ -44,9 +38,9 @@ selectedTask: null,
   actions: {
 
     deleteTask(taskid) {
-        let store = this.get('store');
-        store.findRecord('task', taskid, { backgroundReload: false }).then(function(task) {
-          task.destroyRecord();
+      let store = this.get('store');
+      store.findRecord('task', taskid, { backgroundReload: false }).then(function(task) {
+      task.destroyRecord();
       });
     },
 
@@ -65,17 +59,16 @@ selectedTask: null,
 
     },
     toggleTodo: function() {
-          this.toggleProperty('isShowingTodo');
+      this.toggleProperty('isShowingTodo');
       },
     toggleProgress: function() {
-        this.toggleProperty('isShowingProgress');
+      this.toggleProperty('isShowingProgress');
     },
     toggleDone: function() {
-        this.toggleProperty('isShowingDone');
+      this.toggleProperty('isShowingDone');
     },
 
    setSelectedTask(task, isShowingTask) {
-     debugger
       this.set('selectedTask', task)
       this.toggleProperty(isShowingTask);
     },

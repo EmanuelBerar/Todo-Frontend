@@ -19727,13 +19727,11 @@ md-toolbar.md-warn > md-tabs.md-default-theme > md-tabs-wrapper, md-toolbar.md-w
 
 .card-header-settings {
   background: #485563;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-gradient(linear, right top, left top, from(#29323c), to(#485563));
-  background: linear-gradient(to left, #29323c, #485563);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
-  .card-header-settings .card-content {
-    height: 50px; }
+  background: linear-gradient(to left, #29323c, #485563); }
+
+.card-content {
+  height: 50px; }
 
 .card-placeholder-settings-users {
   font-family: 'Mukta Mahee', sans-serif;
@@ -25543,30 +25541,24 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-.container-card {
+.navbar {
+  background: #485563;
+  background: -webkit-gradient(linear, right top, left top, from(#29323c), to(#485563));
+  background: linear-gradient(to left, #29323c, #485563);
+  color: #eceff1;
   font-family: 'Mukta Mahee', sans-serif; }
-  .container-card .card-color {
-    background-color: #FFFFFF;
-    height: 110px; }
 
 .popup {
   font-family: 'Mukta Mahee', sans-serif;
   width: 500px;
   height: 250px; }
 
-.card {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  -webkit-transition: 0.3s;
-  transition: 0.3s; }
+.container-card {
+  font-family: 'Mukta Mahee', sans-serif; }
 
-.settings-button {
-  background-color: gray;
-  color: #eceff1; }
-
-.add-button {
-  position: relative;
-  background: white; }
+.card-color {
+  background-color: #FFFFFF;
+  height: 110px; }
 
 .card-todo {
   background-color: #32658b; }
@@ -25584,19 +25576,6 @@ button.close {
   width: 300px;
   height: 350px; }
 
-.scrollbar1 {
-  overflow-y: scroll; }
-
-.navbar {
-  background: #485563;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, right top, left top, from(#29323c), to(#485563));
-  background: linear-gradient(to left, #29323c, #485563);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: #eceff1;
-  font-family: 'Mukta Mahee', sans-serif; }
-
 .card-title {
   background: -webkit-gradient(linear, right top, left top, from(#29323c), to(#485563));
   background: linear-gradient(to left, #29323c, #485563);
@@ -25605,3 +25584,14 @@ button.close {
 .title-color {
   color: white;
   text-align: center; }
+
+.scrollbar1 {
+  overflow-y: scroll; }
+
+.settings-button {
+  background-color: gray;
+  color: #eceff1; }
+
+.add-button {
+  position: relative;
+  background: white; }

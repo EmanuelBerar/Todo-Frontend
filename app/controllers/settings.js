@@ -13,7 +13,7 @@ export default Ember.Controller.extend({
   newUser: null,
   newTaskType: null,
 
-    actions: {
+  actions: {
 
   addUser(newUser){
        const us = this.store.createRecord('user', {
@@ -23,14 +23,14 @@ export default Ember.Controller.extend({
        this.set('newUser', '');
      },
 
-    addTaskType(newTaskType){
+  addTaskType(newTaskType){
        const tt = this.store.createRecord('tasktype', {
          name: newTaskType
        });
        tt.save();
        this.set('newTaskType', '');
      },
-     deleteuser(userid) {
+   deleteuser(userid) {
       let store = this.get('store');
       store.findRecord('user', userid, { backgroundReload: false }).then(function(user) {
       user.deleteRecord();
@@ -39,7 +39,7 @@ export default Ember.Controller.extend({
       });
     },
 
-   deletetasktype(tasktypeid) {
+  deletetasktype(tasktypeid) {
       let store = this.get('store');
       store.findRecord('tasktype', tasktypeid, { backgroundReload: false }).then(function(tasktype) {
       tasktype.deleteRecord();
@@ -47,7 +47,5 @@ export default Ember.Controller.extend({
       tasktype.save();
       });
     }
-
-}
-
+  }
 });
