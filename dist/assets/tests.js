@@ -12,7 +12,7 @@ define('todo-front/tests/app.lint-test', [], function () {
 
   QUnit.test('controllers/home.js', function (assert) {
     assert.expect(1);
-    assert.ok(false, 'controllers/home.js should pass ESLint\n\n50:11 - \'store\' is assigned a value but never used. (no-unused-vars)');
+    assert.ok(false, 'controllers/home.js should pass ESLint\n\n78:6 - Unexpected \'debugger\' statement. (no-debugger)');
   });
 
   QUnit.test('controllers/settings.js', function (assert) {

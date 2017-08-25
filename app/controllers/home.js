@@ -32,6 +32,10 @@ selectedTask: null,
     return this.get('store').findAll('tasktype');
   }),
 
+  newTask: Ember.computed(function() {
+     return this.store.createRecord('task');
+   }),
+
   isShowingModal: false,
   isShowingTodo: false,
   isShowingProgress: false,
@@ -46,17 +50,12 @@ selectedTask: null,
       });
     },
 
-    addTask(taskDescription, userId, tasktypeId){
-      let store = this.get('store');
-      const u = this.store.createRecord('task', {
-        description: taskDescription,
-        status: "todo",
-        user: this.store.peekRecord('user', userId),
-        tasktype: this.store.peekRecord('tasktype', tasktypeId)
-      });
-      u.save();
-      this.send("toggleModal");
-    },
+    addTask(task){
+       task.set('status', "todo");
+       task.save();
+       this.send('toggleModal');
+       this.set('newTask', this.store.createRecord('task'));
+     },
 
     updateTask(){
       this.store.find('task', 19).then(function(record) {
@@ -68,16 +67,17 @@ selectedTask: null,
     toggleTodo: function() {
           this.toggleProperty('isShowingTodo');
       },
-      toggleProgress: function() {
-          this.toggleProperty('isShowingProgress');
-      },
-      toggleDone: function() {
-          this.toggleProperty('isShowingDone');
-      },
+    toggleProgress: function() {
+        this.toggleProperty('isShowingProgress');
+    },
+    toggleDone: function() {
+        this.toggleProperty('isShowingDone');
+    },
 
-   setSelectedTask(task, isShowingTasks) {
+   setSelectedTask(task, isShowingTask) {
+     debugger
       this.set('selectedTask', task)
-      this.toggleProperty(isShowingTasks);
+      this.toggleProperty(isShowingTask);
     },
 
     toggleModal: function() {

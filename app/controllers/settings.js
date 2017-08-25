@@ -10,20 +10,25 @@ export default Ember.Controller.extend({
     return this.get('store').findAll('tasktype');
   }),
 
+  newUser: null,
+  newTaskType: null,
+
     actions: {
 
-  addUser(userName){
+  addUser(newUser){
        const us = this.store.createRecord('user', {
-         name: userName
+         name: newUser
        });
        us.save();
+       this.set('newUser', '');
      },
 
-    addTaskType(taskTypeName){
+    addTaskType(newTaskType){
        const tt = this.store.createRecord('tasktype', {
-         name: taskTypeName
+         name: newTaskType
        });
        tt.save();
+       this.set('newTaskType', '');
      },
      deleteuser(userid) {
       let store = this.get('store');

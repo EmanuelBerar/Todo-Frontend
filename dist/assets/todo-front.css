@@ -19732,12 +19732,16 @@ md-toolbar.md-warn > md-tabs.md-default-theme > md-tabs-wrapper, md-toolbar.md-w
   background: -webkit-gradient(linear, right top, left top, from(#29323c), to(#485563));
   background: linear-gradient(to left, #29323c, #485563);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  .card-header-settings .card-content {
+    height: 50px; }
 
 .card-placeholder-settings-users {
-  font-family: 'Mukta Mahee', sans-serif; }
+  font-family: 'Mukta Mahee', sans-serif;
+  background-color: #32658b; }
 
 .card-placeholder-settings-tasktypes {
-  font-family: 'Mukta Mahee', sans-serif; }
+  font-family: 'Mukta Mahee', sans-serif;
+  background-color: #3d6b58; }
 
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -25541,8 +25545,14 @@ button.close {
 
 .container-card {
   font-family: 'Mukta Mahee', sans-serif; }
-  .container-card .lg-4-line {
-    background-color: #FFFFFF; }
+  .container-card .card-color {
+    background-color: #FFFFFF;
+    height: 110px; }
+
+.popup {
+  font-family: 'Mukta Mahee', sans-serif;
+  width: 500px;
+  height: 250px; }
 
 .card {
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -25558,20 +25568,17 @@ button.close {
   position: relative;
   background: white; }
 
-.card-placeholder-todo {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 15px; }
+.card-todo {
+  background-color: #32658b; }
 
-.card-placeholder-progress {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 15px; }
+.card-progress {
+  background-color: #e2e379; }
 
-.card-placeholder-done {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  border-radius: 15px; }
+.card-done {
+  background-color: #3d6b58; }
+
+.layout-column {
+  font-family: 'Mukta Mahee', sans-serif; }
 
 .card-size-home {
   width: 300px;
@@ -25590,11 +25597,11 @@ button.close {
   color: #eceff1;
   font-family: 'Mukta Mahee', sans-serif; }
 
-.delete-todo {
-  float: right; }
-
-.card-header {
-  /* Chrome 10-25, Safari 5.1-6 */
+.card-title {
   background: -webkit-gradient(linear, right top, left top, from(#29323c), to(#485563));
   background: linear-gradient(to left, #29323c, #485563);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  border-radius: 10px 10px 0 0; }
+
+.title-color {
+  color: white;
+  text-align: center; }

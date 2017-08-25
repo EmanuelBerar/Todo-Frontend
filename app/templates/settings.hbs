@@ -1,7 +1,6 @@
 
 <nav class="navbar navbar-default">
   <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header navbar-right ">
       <h2>SETTINGS</h2>
     </div>
@@ -17,60 +16,74 @@
           {{/paper-button}}{{/link-to}}
         </li>
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+    </div>
+  </div>
 </nav>
 
 <!-- USERS AND TASK TYPES -->
 <div class="layout-row layout-align-center-center">
   <div class="layout-column">
-  <div class="card-placeholder-settings-users">
+
 
 
     {{#paper-card as |card|}}
+    <div class="card-title">
     {{#card.title as |title|}}
       {{#title.text as |text|}}
-        {{#text.headline}}Users {{/text.headline}}
+        {{#text.headline}}
+        <p class="title-color">Users</p>
+        {{/text.headline}}
       {{/title.text}}
     {{/card.title}}
+  </div>
     {{paper-divider}}
+    <div class="card-placeholder-settings-users">
     <div class="card-size-settings">
       {{#paper-list}}
       <div class="scrollbar2">
 
         {{#each users as |user|}}
         {{#paper-card as |card|}}
+
         {{#paper-item class="item-background"}}
         <h3>{{user.id}}-{{user.name}}</h3>
         <span class="flex"></span>
         {{#paper-button onClick=(action 'deleteuser' user.id)}}{{paper-icon "delete" size=24}}{{/paper-button}}
         {{/paper-item}}
+
         {{/paper-card}}
         {{/each}}
         </div>
 
       <div class="add-user-tasktype">
-        {{#paper-input label="Add new user" value=userName onChange=(action (mut userName))}}{{/paper-input}}
-        {{#paper-button onClick=(action "addUser" userName)}}{{paper-icon "add" size=24}}{{/paper-button}}
+        {{#paper-input label="Add new user" value=newUser onChange=(action (mut newUser))}}{{/paper-input}}
+        {{#paper-button onClick=(action "addUser" newUser)}}{{paper-icon "add" size=24}}{{/paper-button}}
       </div>
 
       {{/paper-list}}
         </div>
+          </div>
        {{/paper-card}}
 
-  </div>
+
   </div>
 
   <div class="layout-column">
-  <div class="card-placeholder-settings-tasktypes">
+
         {{#paper-card as |card|}}
+        <div class="card-title">
         {{#card.title as |title|}}
           {{#title.text as |text|}}
-            {{#text.headline}}Task Types {{/text.headline}}
+            {{#text.headline}}
+            <p class="title-color">Task Types</p>
+            {{/text.headline}}
           {{/title.text}}
         {{/card.title}}
+      </div>
         {{paper-divider}}
+        <div class="card-placeholder-settings-tasktypes">
         <div class="card-size-settings">
+
       {{#paper-list}}
       <div class="scrollbar2">
 
@@ -86,12 +99,13 @@
       </div>
 
       <div class="">
-        {{#paper-input label="Add new tasktype" value=taskTypeName onChange=(action (mut taskTypeName))}}{{/paper-input}}
-        {{#paper-button onClick=(action "addTaskType" taskTypeName)}}{{paper-icon "add" size=24}}{{/paper-button}}
+        {{#paper-input label="Add new tasktype" value=newTaskType onChange=(action (mut newTaskType))}}{{/paper-input}}
+        {{#paper-button onClick=(action "addTaskType" newTaskType)}}{{paper-icon "add" size=24}}{{/paper-button}}
       </div>
       {{/paper-list}}
+        </div>
       </div>
       {{/paper-card}}
-  </div>
+
 </div>
 </div>
